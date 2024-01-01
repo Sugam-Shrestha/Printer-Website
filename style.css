@@ -1,6 +1,7 @@
 *{
     margin:0px;
     padding:0px;
+    box-sizing: border-box;
 }
 
 :root{
@@ -17,69 +18,105 @@ html{
 
 header{
     background-color:transparent;
-    border-radius: 0px 0px 10px 10px;
 
 }
 .navbar{
     display:flex;
-    width:90%;
+    width:80%;
     margin:auto;
-    justify-content:space-around;
-    gap:20px;
+    justify-content:space-between;
+    gap:150px;
 }
 
 /* this code is for the image logo in the website*/
 
-.imglogo{
-    width:200px;
-
-}
-figure{
+.logo > figure{
     display:flex;
+    width:200px;
+    height:auto;
     align-items:center;
 }
-img{
-    width:100%;;
+figure > img{
+    width:100%;
+    margin:10px auto;
+    background-color: var(--primary);
+    border-radius: 50%;
 }
-
 
 nav{
-   display:flex; 
-   align-items:center;
+    display:flex;
+    margin: 10px auto;
+    align-items:center;
+    justify-content:center;
 }
 
-ul{
+nav > ul{
     list-style:none;
     display:flex;
-    gap:30px;
+    justify-content:center;
+    gap:10px;
+    margin:auto;
+}
+
+nav > ul > li {
+    display:flex;
+    margin:auto;
+}
+nav > ul > li > a{
+    display:flex;
+    margin: 10px auto;
+    align-items:center;
+    justify-content:center;
+    gap:5px;
+}
+
+nav> ul > li > a >img{
+    width:10%;
+    color:#ffffff;
+    transition: filter 0.3s ease-in-out;
 }
 
 a{
     text-decoration:none;
-    color:var(--light)
+    color:var(--light);
 }
-
 a:hover{
     color:var(--secondary);
 }
 
-.rightlinks{
+nav> ul > li > a >img:hover{
+    filter:blur(1px)
+}
+
+.rightlinks > ul{
+    list-style:none;
     display:flex;
-    align-items:center;
-}
-
-main{
-    width:90%;
+    justify-content:center;
+    gap:10px;
     margin:auto;
-    color:var(--light);
 }
 
-p{
-    padding:20px;
-    margin:20px;
-    border-radius:10px;
-    background-color:var(--primary);
+.rightlinks > ul > li{
+    display:flex;
+    margin:auto;
 }
+
+.rightlinks> ul > li > a{
+    display:flex;
+    margin: 10px auto;
+    align-items:center;
+    justify-content:center;
+    gap:5px;
+}
+
+.rightlinks > ul > li > img{
+    width:10%;
+}
+
+
+
+
+
 
 
 
