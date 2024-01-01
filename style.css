@@ -1,0 +1,67 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+:root{
+    --p:#2274a5;
+    --s:#32936f;
+    --t:#1e1e24;    
+    --f:#ebd4cb;
+    --fi:#83b692;
+}
+
+body{
+    background-color: var(--t);
+}
+header{
+    background-color:var(--fi);
+    border-radius: 0px 0px 10px 10px;
+    width:100%;
+    position:fixed;
+}
+.navbar{
+    display:flex;
+    width:80%;
+    margin:auto;
+    justify-content:space-around;
+    gap:20px;
+}
+
+/* this code is for the image logo in the website*/
+
+.imglogo{
+    width:200px;
+
+}
+figure{
+    display:flex;
+    align-items:center;
+}
+img{
+    width:100%;;
+}
+
+
+nav{
+   display:flex; 
+   align-items:center;
+}
+
+ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+a{
+    text-decoration:none;
+}
+
+a:hover{
+    color:var(--f);
+}
+
+
+
+
