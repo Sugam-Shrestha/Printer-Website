@@ -4,27 +4,27 @@
 }
 
 :root{
-    --p:#2274a5;
-    --s:#32936f;
-    --t:#1e1e24;    
-    --f:#ebd4cb;
-    --fi:#83b692;
+    --primary:#2274a5;
+    --secondary:#83b692;
+    --dark:#1e1e24;    
+    --light:#ebd4cb;
+
 }
 
 body{
-    background-color: var(--t);
+    background-color: var(--dark);
 }
 header{
-    background-color:var(--fi);
+    background-color:transparent;
     border-radius: 0px 0px 10px 10px;
     width:100%;
     position:fixed;
 }
 .navbar{
     display:flex;
-    width:80%;
+    width:90%;
     margin:auto;
-    justify-content:space-around;
+    justify-content:space-between;
     gap:20px;
 }
 
@@ -56,10 +56,16 @@ ul{
 
 a{
     text-decoration:none;
+    color:var(--light)
 }
 
 a:hover{
-    color:var(--f);
+    color:var(--secondary);
+}
+
+.rightlinks{
+    display:flex;
+    align-items:center;
 }
 
 
