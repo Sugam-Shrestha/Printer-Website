@@ -11,8 +11,12 @@
 
 }
 
-body{
-    background-color: var(--dark);
+html{
+    background-color:var(--dark)
+}
+main{
+    width:90%;
+    background-color:var(--primary);
 }
 header{
     background-color:transparent;
