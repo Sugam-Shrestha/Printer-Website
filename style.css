@@ -9,6 +9,7 @@
     --secondary:#83b692;
     --dark:#1e1e24;    
     --light:#ebd4cb;
+    --alt:#8ebbff;
 
 }
 
@@ -18,11 +19,24 @@ html{
 
 header{
     background-color:transparent;
+    display:inline-block;
+    margin:auto;
+}
 
+.searchbox{
+    display:flex;
+    margin:auto;
+    align-items:center;
+    justify-content: center;
+    width:200px;
+}
+
+.searchbox > button > img{
+    width:40%;
 }
 .navbar{
     display:flex;
-    width:80%;
+    width:90%;
     margin:auto;
     justify-content:space-between;
     gap:150px;
@@ -32,20 +46,18 @@ header{
 
 .logo > figure{
     display:flex;
-    width:200px;
+    width:150px;
     height:auto;
     align-items:center;
 }
 figure > img{
     width:100%;
-    margin:10px auto;
-    background-color: var(--primary);
-    border-radius: 50%;
+    margin:auto;
 }
 
 nav{
     display:flex;
-    margin: 10px auto;
+    margin: 5px auto;
     align-items:center;
     justify-content:center;
 }
@@ -56,62 +68,51 @@ nav > ul{
     justify-content:center;
     gap:10px;
     margin:auto;
+
 }
 
 nav > ul > li {
     display:flex;
     margin:auto;
+    border:1.5px solid var(--primary);
+    border-radius:10px;
 }
 nav > ul > li > a{
     display:flex;
     margin: 10px auto;
     align-items:center;
     justify-content:center;
-    gap:5px;
+    gap:3px;
 }
 
 nav> ul > li > a >img{
-    width:10%;
-    color:#ffffff;
-    transition: filter 0.3s ease-in-out;
+    width:15%;
 }
 
 a{
     text-decoration:none;
     color:var(--light);
 }
+
+
 a:hover{
     color:var(--secondary);
 }
 
-nav> ul > li > a >img:hover{
-    filter:blur(1px)
+main{
+    margin:100px;
+    background-color: var(--alt);
+    display:;
+    width:80%;
+    margin:200px auto;
+
 }
 
-.rightlinks > ul{
-    list-style:none;
-    display:flex;
-    justify-content:center;
-    gap:10px;
-    margin:auto;
+p{
+    margin:100px;
 }
 
-.rightlinks > ul > li{
-    display:flex;
-    margin:auto;
-}
 
-.rightlinks> ul > li > a{
-    display:flex;
-    margin: 10px auto;
-    align-items:center;
-    justify-content:center;
-    gap:5px;
-}
-
-.rightlinks > ul > li > img{
-    width:10%;
-}
 
 
 
