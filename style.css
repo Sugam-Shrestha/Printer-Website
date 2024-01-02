@@ -13,11 +13,11 @@
 }
 
 html{
-    background-color:var(--dark)
+    background-color:var(--dark);
 }
 
 header{
-    background-color:transparent;
+    background-color:transparent; 
     display:inline-block;
     margin:auto;
 }
@@ -64,23 +64,17 @@ nav{
 nav > ul{
     list-style:none;
     display:flex;
-    justify-content:center;
+    justify-content:space-around;
     gap:10px;
     margin:auto;
-
 }
 
-nav > ul > li {
-    display:flex;
-    margin:auto;
-    border:1.5px solid var(--primary);
-    border-radius:10px;
-}
 nav > ul > li > a{
     display:flex;
+    flex-direction:column;
     margin: 10px auto;
     align-items:center;
-    justify-content:center;
+    justify-content: center;
     gap:3px;
 }
 
@@ -101,7 +95,7 @@ a:hover{
 main{
     margin:100px;
     background-color: var(--alt);
-    display:;
+    
     width:80%;
     margin:200px auto;
 
@@ -111,13 +105,8 @@ p{
     margin:100px;
 }
 
-
-
-
-
-
-
-
-
-
-
+p {
+    font-size: 2em;
+    max-width: 80%;
+  }
+  
