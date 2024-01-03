@@ -8,7 +8,7 @@
     --primary:#2274a5;
     --secondary:#83b692;
     --dark:#1e1e24;    
-    --light:#ebd4cb;
+    --light:#ffffff;
     --alt:#8ebbff;
 }
 
@@ -58,9 +58,8 @@ nav.centernav{
     transition: 0.3s all ease-in-out;
 }
 
-.centernav li:hover{
-    background-color:#808080;
-    border-radius:50%;
+li:hover{
+    background-color:var(--primary);
 }
 
 .centernav a {
@@ -102,8 +101,7 @@ nav.rightnav{
 }
 
 .rightnav li:hover{
-    background-color:#808080;
-    border-radius:50%;
+    background-color:var(--primary);
 }
 
 .rightnav a{
@@ -133,14 +131,11 @@ figure.link img{
 
 
 main{
-    margin:100px;
-    background-color: var(--alt);
-    width:80%;
-    margin:200px auto;
+
 
 }
 
 main > .featured{
-    background-color:var(--primary);
+
     
 }
