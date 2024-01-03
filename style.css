@@ -22,17 +22,6 @@ header{
     margin:auto;
 }
 
-.searchbox{
-    display:flex;
-    margin:auto;
-    align-items:center;
-    justify-content: center;
-    width:200px;
-}
-
-.searchbox > button > img{
-    width:40%;
-}
 .navbar{
     display:flex;
     width:90%;
@@ -43,13 +32,13 @@ header{
 
 /* this code is for the image logo in the website*/
 
-.logo > figure{
+.navbar .logo > figure{
     display:flex;
     width:150px;
     height:auto;
     align-items:center;
 }
-figure > img{
+.navbar .logo >figure > img{
     width:100%;
     margin:auto;
 }
@@ -91,8 +80,8 @@ nav> ul > li > a >img{
 a{
     text-decoration:none;
     color:var(--light);
+    font-size:13px;
 }
-
 
 a:hover{
     color:var(--secondary);
@@ -103,18 +92,12 @@ a:hover{
 main{
     margin:100px;
     background-color: var(--alt);
-    
     width:80%;
     margin:200px auto;
 
 }
 
-p{
-    margin:100px;
+main > .featured{
+    background-color:var(--primary);
+    
 }
-
-p {
-    font-size: 2em;
-    max-width: 80%;
-  }
-  
