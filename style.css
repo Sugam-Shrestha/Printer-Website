@@ -16,76 +16,119 @@ html{
     background-color:var(--dark);
 }
 
-header{
-    background-color:transparent; 
-    display:inline-block;
-    margin:auto;
-}
-
 .navbar{
     display:flex;
+    justify-content:space-between;
     width:90%;
     margin:auto;
-    justify-content:space-between;
-    gap:150px;
+    gap:10%;
 }
 
 /* this code is for the image logo in the website*/
 
-.navbar .logo > figure{
+.navbar .logo figure{
     display:flex;
-    width:150px;
-    height:auto;
-    align-items:center;
+    width:200px;
 }
-.navbar .logo >figure > img{
+
+.navbar .logo figure img{
     width:100%;
-    margin:auto;
 }
 
-nav{
+nav.centernav{
     display:flex;
-    margin: 5px auto;
     align-items:center;
-    justify-content:center;
 }
 
-nav > ul{
+.centernav ul{
     list-style:none;
-    display:flex;
-    justify-content:space-around;
-    gap:10px;
+    display:inline-flex;
     margin:auto;
-}
-nav> ul> li{ 
-    transition: 0.3s all ease-in-out;
-    border-radius:10px;
-}
-li:hover{
-    background-color:#808080;
-}
-
-nav > ul > li > a{
-    display:flex;
-    flex-direction:column;
-    margin: 10px auto;
     align-items:center;
-    justify-content: center;
+    gap:40px;
 }
 
-nav> ul > li > a >img{
-    width:15%;
+.centernav li{ 
+    display:flex;
+    align-content:center;
+    width:80px;
+    height:80px;
+    padding:10px;
+    border-radius:50%;
+    transition: 0.3s all ease-in-out;
 }
 
-a{
+.centernav li:hover{
+    background-color:#808080;
+    border-radius:50%;
+}
+
+.centernav a {
     text-decoration:none;
+    display:flex;
+    flex-direction: column;
+    margin:auto;
+    align-items: center;
+    font-family:monospace;
     color:var(--light);
     font-size:13px;
 }
 
-a:hover{
+.centernav a:hover{
     color:var(--secondary);
     text-decoration:underline;
+}
+
+nav.rightnav{
+    display:flex;
+    align-items:center;
+}
+.rightnav ul{
+    list-style:none;
+    display:inline-flex;
+    margin:auto;
+    align-items:center;
+    gap:40px;
+}
+
+.rightnav li{
+    display:flex;
+    align-content:center;
+    width:80px;
+    height:80px;
+    padding:10px;
+    border-radius:50%;
+    transition: 0.3s all ease-in-out;
+}
+
+.rightnav li:hover{
+    background-color:#808080;
+    border-radius:50%;
+}
+
+.rightnav a{
+    text-decoration:none;
+    display:flex;
+    flex-direction: column;
+    margin:auto;
+    align-items: center;
+    color:var(--light);
+    font-size:13px;
+    font-family:monospace;
+}
+
+.rightnav a:hover{
+    color:var(--secondary);
+    text-decoration:underline;
+}
+
+figure.link{
+    display:flex;
+    width:30px;
+}
+
+figure.link img{
+    width:100%;
 }
 
 
