@@ -6,10 +6,10 @@
 
 :root{
     --primary:#2274a5;
-    --secondary:#83b692;
-    --dark:#1e1e24;    
-    --light:#ffffff;
+    --secondary:#3afacd;
     --alt:#8ebbff;
+    --dark:#131313;    
+    --light:#e7e5e5;
 }
 
 html{
@@ -129,13 +129,18 @@ figure.link img{
     width:100%;
 }
 
-
 main{
-
-
+    background-color:#8ebbff ;
+    display:flex;
+    width:80%;
+    margin:auto;
+    align-items:center;
+    justify-content: center;
 }
 
-main > .featured{
-
-    
+main .intro{
+    display:flex;
+    background-color: #e7e5e5;
+    align-items:center;
+    justify-content:space-between;
 }
