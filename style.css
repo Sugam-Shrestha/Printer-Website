@@ -130,7 +130,6 @@ figure.link img{
 }
 
 main{
-    background-color:#8ebbff ;
     display:flex;
     width:80%;
     margin:auto;
@@ -140,7 +139,36 @@ main{
 
 main .intro{
     display:flex;
-    background-color: #e7e5e5;
+    width:100%;
+    margin:auto;
     align-items:center;
-    justify-content:space-between;
+    justify-content:space-around;
+}
+
+.intro .introduce {
+    width:70%;
+    margin:auto;
+}
+
+main .intro .introduce h1{
+    color:var(--light);
+    font-size:80px;
+    font-family:monospace;
+}
+
+.intro .introduce h1 span {
+    color:var(--primary);
+}
+
+main .intro .introduce h2{
+    color:var(--secondary);
+    font-size:50px;
+    font-family:'Courier New', Courier, monospace;
+}
+.intro .image{
+    width:30%;
+}
+
+.image img{
+    width:100%;
 }
