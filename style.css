@@ -48,34 +48,33 @@ nav.centernav{
     gap:40px;
 }
 
-.centernav li{ 
-    display:flex;
-    align-content:center;
-    width:80px;
-    height:80px;
-    padding:10px;
-    border-radius:50%;
-    transition: 0.3s all ease-in-out;
-}
-
-li:hover{
-    background-color:var(--primary);
-}
-
-.centernav a {
+.centernav a{ 
     text-decoration:none;
+    border-radius:50px;
     display:flex;
-    flex-direction: column;
     margin:auto;
-    align-items: center;
-    font-family:monospace;
+    align-items:center;
+    justify-content: center;
+    width:90px;
+    height:90px;
+    padding:10px;
     color:var(--light);
-    font-size:13px;
+    font-size:15px;
+    font-family:monospace;
+    transition:0.3s ease-in-out; 
 }
 
-.centernav a:hover{
+a:hover{
+    background-color:var(--primary);
     color:var(--secondary);
     text-decoration:underline;
+}
+
+.centernav li {
+    display:flex;
+    margin:auto;
+    align-items:center;
+    flex-direction:column;
 }
 
 nav.rightnav{
@@ -90,34 +89,33 @@ nav.rightnav{
     gap:40px;
 }
 
-.rightnav li{
-    display:flex;
-    align-content:center;
-    width:80px;
-    height:80px;
-    padding:10px;
-    border-radius:50%;
-    transition: 0.3s all ease-in-out;
-}
-
-.rightnav li:hover{
-    background-color:var(--primary);
-}
-
 .rightnav a{
     text-decoration:none;
+    border-radius:50px;
     display:flex;
-    flex-direction: column;
     margin:auto;
-    align-items: center;
+    align-items:center;
+    justify-content: center;
+    width:90px;
+    height:90px;
+    padding:10px;
     color:var(--light);
-    font-size:13px;
+    font-size:15px;
     font-family:monospace;
+    transition:0.3s ease-in-out; 
 }
 
 .rightnav a:hover{
+    background-color:var(--primary);
     color:var(--secondary);
     text-decoration:underline;
+}
+
+.rightnav li{
+    display:flex;
+    margin:auto;
+    align-items:center;
+    flex-direction:column;
 }
 
 figure.link{
@@ -139,8 +137,6 @@ main{
 
 main .intro{
     display:flex;
-    width:100%;
-    margin:auto;
     align-items:center;
     justify-content:space-around;
 }
@@ -171,4 +167,35 @@ main .intro .introduce h2{
 
 .image img{
     width:100%;
+}
+
+.prodnav{
+    display:flex;
+    width:90%;
+}
+.prodnav ul{
+    list-style:none;
+    display:flex;
+    width:100%;
+    margin:auto;
+    align-items:center;
+    border-radius:20px;
+    justify-content: space-around;
+}
+
+.prodnav a{
+    display:flex;
+    width:10%;
+    padding:10px;
+    justify-content: center;
+    text-decoration:none;
+    color:var(--light);
+    border-radius:20px;
+    transition: 0.2s ease-in-out;
+}
+
+.prodnav a:hover{
+    color:var(--dark);
+    text-decoration:underline;
+    background-color:var(--secondary);
 }
