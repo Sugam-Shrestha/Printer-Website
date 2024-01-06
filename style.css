@@ -16,6 +16,11 @@ html{
     background-color:var(--dark);
 }
 
+header{
+    position:sticky;
+    top:0;
+    background-color: var(--dark);
+}
 .navbar{
     display:flex;
     justify-content:space-between;
@@ -127,6 +132,10 @@ figure.link img{
     width:100%;
 }
 
+nav ul a.current{
+    background-color:var(--primary);
+}
+
 main{
     display:flex;
     width:80%;
@@ -142,7 +151,7 @@ main .intro{
 }
 
 .intro .introduce {
-    width:70%;
+    width:80%;
     margin:auto;
 }
 
@@ -167,6 +176,14 @@ main .intro .introduce h2{
 
 .image img{
     width:100%;
+}
+
+.content {
+    display:grid;
+    height:1000px;
+}
+.product h1{
+    color:aqua;
 }
 
 .prodnav{
