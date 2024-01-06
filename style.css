@@ -20,11 +20,12 @@ header{
     position:sticky;
     top:0;
     background-color: var(--dark);
+    box-shadow: 5px 5px 3px var(--dark);
 }
 .navbar{
-    display:flex;
-    justify-content:space-between;
-    width:90%;
+    display:inline-flex;
+    justify-content:space-around;
+    width:100%;
     margin:auto;
     gap:10%;
 }
@@ -55,7 +56,7 @@ nav.centernav{
 
 .centernav a{ 
     text-decoration:none;
-    border-radius:50px;
+    border-radius:10px;
     display:flex;
     margin:auto;
     align-items:center;
@@ -64,7 +65,7 @@ nav.centernav{
     height:90px;
     padding:10px;
     color:var(--light);
-    font-size:15px;
+    font-size:18px;
     font-family:monospace;
     transition:0.3s ease-in-out; 
 }
@@ -80,6 +81,7 @@ a:hover{
     margin:auto;
     align-items:center;
     flex-direction:column;
+    text-align:center;
 }
 
 nav.rightnav{
@@ -96,7 +98,7 @@ nav.rightnav{
 
 .rightnav a{
     text-decoration:none;
-    border-radius:50px;
+    border-radius:10px;
     display:flex;
     margin:auto;
     align-items:center;
@@ -105,7 +107,7 @@ nav.rightnav{
     height:90px;
     padding:10px;
     color:var(--light);
-    font-size:15px;
+    font-size:18px;
     font-family:monospace;
     transition:0.3s ease-in-out; 
 }
@@ -138,7 +140,7 @@ nav ul a.current{
 
 main{
     display:flex;
-    width:80%;
+    width:90%;
     margin:auto;
     align-items:center;
     justify-content: center;
@@ -180,21 +182,35 @@ main .intro .introduce h2{
 
 .content {
     display:grid;
-    height:1000px;
 }
-.product h1{
-    color:aqua;
+
+.content .featured{
+    display:flex;
+    margin:auto;
+    align-items: center;
+}
+.content .featured figure{
+    width:30px;
+}
+
+.featured figure img{
+    width:100%;
+}
+
+.featured h1{
+    color:var(--light);
 }
 
 .prodnav{
     display:flex;
-    width:90%;
+    width:95%;
 }
 .prodnav ul{
     list-style:none;
     display:flex;
     width:100%;
-    margin:auto;
+    height:150px;
+    gap:10px;
     align-items:center;
     border-radius:20px;
     justify-content: space-around;
@@ -202,7 +218,9 @@ main .intro .introduce h2{
 
 .prodnav a{
     display:flex;
-    width:10%;
+    align-items:center;
+    width:30%;
+    height:30%;
     padding:10px;
     justify-content: center;
     text-decoration:none;
@@ -211,8 +229,17 @@ main .intro .introduce h2{
     transition: 0.2s ease-in-out;
 }
 
+.prodnav li{
+    text-align:center;
+}
+
 .prodnav a:hover{
     color:var(--dark);
     text-decoration:underline;
     background-color:var(--secondary);
+}
+
+a.currentprodnav{
+    background-color:var(--secondary);
+    color:var(--dark);
 }
