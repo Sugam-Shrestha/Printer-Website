@@ -1,9 +1,11 @@
+/* setting the default margin and padding to 0px */
 *{
     margin:0px;
     padding:0px;
     box-sizing: border-box;
 }
 
+/* variable declared for colours for the website */ 
 :root{
     --primary:#2274a5;
     --secondary:#3afacd;
@@ -12,9 +14,14 @@
     --light:#e7e5e5;
 }
 
+/* putting the background color of the whole page dark */ 
+
 html{
     background-color:var(--dark);
 }
+
+/* in header postion:sticky; is used to make the navbar to always stay on the top
+   box-shadow is used to make the box shadow blur and 5px */
 
 header{
     position:sticky;
@@ -22,6 +29,11 @@ header{
     background-color: var(--dark);
     box-shadow: 5px 5px 3px var(--dark);
 }
+
+/* inline-flex is used to make the contents inside navbar in a straight horizontal line
+    space-around is used to align the contents in navbar horizontally with space around nature.
+    gap is given so that the contents have some gap between them */
+
 .navbar{
     display:inline-flex;
     justify-content:space-around;
@@ -30,30 +42,37 @@ header{
     gap:10%;
 }
 
-/* this code is for the image logo in the website*/
+/* the width of the logo is 200px*/
 
 .navbar .logo figure{
     display:flex;
     width:200px;
 }
 
+/* the width of the logo is 100% that fits the container figure */
+
 .navbar .logo figure img{
     width:100%;
 }
 
+/* the display:flex; is used to make the contents align horizontally and in center. */
 nav.centernav{
     display:flex;
     align-items:center;
 }
 
+/* the liststyle is set to none to make the bullet points disappear from the listitems
+    inline-flex is used to make the contents align horizontally with 40px of space between them. */
 .centernav ul{
     list-style:none;
     display:inline-flex;
+    gap:40px;
     margin:auto;
     align-items:center;
-    gap:40px;
 }
 
+/* text decoration is none to remove the underline fron the anker. 
+transition is given 0.3 seconds so that hover animations will appear slower and disappear slower*/
 .centernav a{ 
     text-decoration:none;
     border-radius:10px;
@@ -65,17 +84,19 @@ nav.centernav{
     height:90px;
     padding:10px;
     color:var(--light);
-    font-size:18px;
+    font-size:16px;
     font-family:monospace;
     transition:0.3s ease-in-out; 
 }
 
+/* when we hover over the anker links, the background color, text color and text-decoration changes. */
 a:hover{
     background-color:var(--primary);
     color:var(--secondary);
     text-decoration:underline;
 }
 
+/* flex direction specifies in what direction the flex aligns either horizontal or vertical  */
 .centernav li {
     display:flex;
     margin:auto;
@@ -88,6 +109,7 @@ nav.rightnav{
     display:flex;
     align-items:center;
 }
+
 .rightnav ul{
     list-style:none;
     display:inline-flex;
@@ -107,7 +129,7 @@ nav.rightnav{
     height:90px;
     padding:10px;
     color:var(--light);
-    font-size:18px;
+    font-size:16px;
     font-family:monospace;
     transition:0.3s ease-in-out; 
 }
@@ -142,24 +164,31 @@ main{
     display:flex;
     width:90%;
     margin:auto;
-    align-items:center;
-    justify-content: center;
+}
+
+.maincontent{
+    width:80%;
+
 }
 
 main .intro{
     display:flex;
+    width:100%;
+    margin:auto;
     align-items:center;
+    justify-content: center;
     justify-content:space-around;
 }
 
 .intro .introduce {
-    width:80%;
+    width:100%;
     margin:auto;
+
 }
 
 main .intro .introduce h1{
     color:var(--light);
-    font-size:80px;
+    font-size:70px;
     font-family:monospace;
 }
 
@@ -167,7 +196,7 @@ main .intro .introduce h1{
     color:var(--primary);
 }
 
-main .intro .introduce h2{
+.intro .introduce h2{
     color:var(--secondary);
     font-size:50px;
     font-family:'Courier New', Courier, monospace;
@@ -181,16 +210,27 @@ main .intro .introduce h2{
 }
 
 .content {
-    display:grid;
+    display:flex;
+    width:100%;
+    margin:auto;
 }
 
-.content .featured{
+.content .product{
     display:flex;
-    margin:auto;
+    flex-direction: column;
+    width:100%;
+}
+
+.product .featured{
+    display:flex;
     align-items: center;
+    gap:5px;
+    margin:auto;
+    padding:1px;
+    border-bottom: 3px solid var(--primary);
 }
 .content .featured figure{
-    width:30px;
+    width:25px;
 }
 
 .featured figure img{
@@ -199,7 +239,77 @@ main .intro .introduce h2{
 
 .featured h1{
     color:var(--light);
+    text-align:center;
 }
+
+.product .onsale{
+    display:flex;
+    align-items: center;
+    gap:5px;
+    margin:auto;
+    padding:1px;
+    border-bottom: 3px solid var(--primary);
+}
+
+.product .onsale figure{
+    width:25px;
+}
+
+.onsale figure img{
+    width:100%;
+}
+
+.onsale h1{
+    color:var(--light);
+    text-align:center;
+}
+
+.productcontainer{
+    display:flex;
+    justify-content:center;
+    margin:10px;
+    border-radius: 20px;
+}
+
+.productitem{
+    display:flex;
+    flex-grow: 1;
+    width:30%;
+    margin:10px;
+    flex-direction: column;
+    align-items:center;
+    border:2px solid var(--primary);
+    border-radius:10px;
+}
+
+.productitem:hover{
+    background-color: var(--primary);
+    color:var(--light);
+    box-shadow: 0px 0px 5px var(--light);
+}
+
+.productitem h1{
+    margin-top:10px;
+    padding:10px;
+    text-align:center;
+    color:var(--light);
+}
+
+.productitem figure{
+    width:200px;
+}
+
+.productitem img{
+    width:100%;
+    border-radius:10px;
+}
+
+
+
+
+
+
+
 
 .prodnav{
     display:flex;
