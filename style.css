@@ -183,12 +183,13 @@ main .intro{
 .intro .introduce {
     width:100%;
     margin:auto;
+    border-left:5px solid var(--light);
 
 }
 
 main .intro .introduce h1{
     color:var(--light);
-    font-size:70px;
+    font-size:50px;
     font-family:monospace;
 }
 
@@ -198,15 +199,20 @@ main .intro .introduce h1{
 
 .intro .introduce h2{
     color:var(--secondary);
-    font-size:50px;
+    font-size:30px;
+    border-left:5px solid var(--secondary);
     font-family:'Courier New', Courier, monospace;
 }
+
 .intro .image{
-    width:30%;
+    width:40%;
 }
 
 .image img{
-    width:100%;
+    width:95%;
+    border:1px solid var(--light);
+    margin:10px;
+    border-radius:20%;
 }
 
 .content {
@@ -273,7 +279,7 @@ main .intro .introduce h1{
 
 .productitem{
     display:flex;
-    flex-grow: 1;
+    flex-grow:1;
     width:30%;
     margin:10px;
     flex-direction: column;
@@ -290,9 +296,11 @@ main .intro .introduce h1{
 
 .productitem h1{
     margin-top:10px;
-    padding:10px;
-    text-align:center;
+    font-size:20px;
+    padding:3px;
     color:var(--light);
+    text-align:center;
+    border-left:2px solid var(--light);
 }
 
 .productitem figure{
