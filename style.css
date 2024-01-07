@@ -3,6 +3,7 @@
     margin:0px;
     padding:0px;
     box-sizing: border-box;
+    font-family:monospace;
 }
 
 /* variable declared for colours for the website */ 
@@ -16,9 +17,13 @@
 
 /* putting the background color of the whole page dark */ 
 
+/* code from here applies to all the pages*/
+
 html{
     background-color:var(--dark);
 }
+
+    /* code for navbar starts */
 
 /* in header postion:sticky; is used to make the navbar to always stay on the top
    box-shadow is used to make the box shadow blur and 5px */
@@ -38,24 +43,26 @@ header{
     display:inline-flex;
     justify-content:space-around;
     width:100%;
+    height:100px;
     margin:auto;
     gap:10%;
 }
 
-/* the width of the logo is 200px*/
+/* width of the logo is 200px*/
 
 .navbar .logo figure{
     display:flex;
     width:200px;
 }
 
-/* the width of the logo is 100% that fits the container figure */
+/* width of the logo is 100% that fits in the container figure */
 
 .navbar .logo figure img{
     width:100%;
+    height:90px;
 }
 
-/* the display:flex; is used to make the contents align horizontally and in center. */
+/* display:flex; is used to make the contents align horizontally and in center. */
 nav.centernav{
     display:flex;
     align-items:center;
@@ -75,7 +82,7 @@ nav.centernav{
 transition is given 0.3 seconds so that hover animations will appear slower and disappear slower*/
 .centernav a{ 
     text-decoration:none;
-    border-radius:10px;
+    border-radius:50px;
     display:flex;
     margin:auto;
     align-items:center;
@@ -90,7 +97,7 @@ transition is given 0.3 seconds so that hover animations will appear slower and 
 }
 
 /* when we hover over the anker links, the background color, text color and text-decoration changes. */
-a:hover{
+.centernav a:hover{
     background-color:var(--primary);
     color:var(--secondary);
     text-decoration:underline;
@@ -160,6 +167,14 @@ nav ul a.current{
     background-color:var(--primary);
 }
 
+    /* code for navbar ends */
+
+/* the code till here applies to all the webpages */
+
+/* the code from here applies to home and product page only */
+
+    /* code for main division starts which contains all the contents */
+
 main{
     display:flex;
     width:90%;
@@ -171,26 +186,23 @@ main{
 
 }
 
+    /* code starts for intro of the page */
+
 main .intro{
     display:flex;
     width:100%;
-    margin:auto;
     align-items:center;
     justify-content: center;
     justify-content:space-around;
-}
-
-.intro .introduce {
-    width:100%;
-    margin:auto;
-    border-left:5px solid var(--light);
-
+    margin-top:30px;
 }
 
 main .intro .introduce h1{
     color:var(--light);
     font-size:50px;
     font-family:monospace;
+    padding-left:10px;
+    border-left:5px solid var(--light);
 }
 
 .intro .introduce h1 span {
@@ -200,20 +212,25 @@ main .intro .introduce h1{
 .intro .introduce h2{
     color:var(--secondary);
     font-size:30px;
+    margin-top:10px;
     border-left:5px solid var(--secondary);
-    font-family:'Courier New', Courier, monospace;
+    padding-left:10px;
 }
 
 .intro .image{
+    display:flex;
+    justify-content:center;
     width:40%;
 }
 
 .image img{
-    width:95%;
-    border:1px solid var(--light);
-    margin:10px;
-    border-radius:20%;
+    align-items: center;
+    width:70%;
 }
+
+    /* code ends for the intro of the page */
+
+    /* code starts for the products displayed on main page and products page */
 
 .content {
     display:flex;
@@ -222,9 +239,14 @@ main .intro .introduce h1{
 }
 
 .content .product{
+    margin:20px;
     display:flex;
     flex-direction: column;
     width:100%;
+    padding:10px;
+    border:2px solid var(--light);
+    box-shadow:0px 0px 10px var(--light);
+    border-radius:30px;
 }
 
 .product .featured{
@@ -246,6 +268,7 @@ main .intro .introduce h1{
 .featured h1{
     color:var(--light);
     text-align:center;
+    font-size:23px;
 }
 
 .product .onsale{
@@ -268,6 +291,7 @@ main .intro .introduce h1{
 .onsale h1{
     color:var(--light);
     text-align:center;
+    font-size:23px;
 }
 
 .productcontainer{
@@ -279,28 +303,31 @@ main .intro .introduce h1{
 
 .productitem{
     display:flex;
-    flex-grow:1;
+    flex-wrap: wrap;
     width:30%;
     margin:10px;
     flex-direction: column;
     align-items:center;
-    border:2px solid var(--primary);
+    border:2px solid var(--alt);
     border-radius:10px;
+    padding:10px;
+    transition: 0.3s ease-in-out;
 }
 
 .productitem:hover{
     background-color: var(--primary);
-    color:var(--light);
-    box-shadow: 0px 0px 5px var(--light);
+    box-shadow: 0px 0px 40px var(--light);
 }
 
 .productitem h1{
     margin-top:10px;
-    font-size:20px;
-    padding:3px;
+    font-size:18px;
+    padding:5px;
     color:var(--light);
     text-align:center;
-    border-left:2px solid var(--light);
+    border-bottom:2px solid var(--secondary);
+    border-radius:15px;
+    box-shadow: 0px 0px 5px var(--primary);
 }
 
 .productitem figure{
@@ -312,23 +339,94 @@ main .intro .introduce h1{
     border-radius:10px;
 }
 
+.description ul{
+    padding:5px;
+    margin-left:15px;
+    border-left:5px solid var(--light)
+}
+
+.description li{
+    list-style:none;
+    color:var(--light);
+}
+
+.description .price{
+    padding-left: 10px;
+    margin-top:7px;
+    margin-left:15px;
+    color:var(--secondary);
+    border-left: 5px solid var(--secondary);
+}
+
+.productitem .buy-more {
+    display:flex;
+    align-items: center;
+    gap:10px;
+}
+
+.buy a{
+    text-decoration: none;
+    color:var(--light);
+}
+
+.buy p{
+    font-size:10px;
+    margin:5px;
+    padding:10px 20px;
+    border:2px solid var(--secondary);
+    border-radius:20px;
+}
+
+.buy p:hover{
+    color:var(--dark);
+    background-color: var(--secondary);
+    box-shadow: 0px 0px 10px var(--dark);
+}
+
+.more a{
+    text-decoration: none;
+    color:var(--light);
+}
+
+.more p{
+    font-size:10px;
+    margin:5px;
+    padding:10px 20px;
+    border:2px solid var(--light);
+    border-radius:20px;
+}
+
+.more p:hover{
+    color:var(--dark);
+    background-color: var(--light);
+    box-shadow: 0px 0px 10px var(--dark);
+}
+
+    /* code ends for the products displayed on homepage and products page */
+
+    /* code for main division ends */
+
+/* the code till here applies to homepage and product page only */
 
 
 
+/* the code from here applies to product page only */
 
-
-
-
+    /* code starts for navigation bar of products */
 .prodnav{
+    margin-top:20px;
     display:flex;
     width:95%;
+    border:2px solid var(--secondary);
+    border-radius:35px;
 }
 .prodnav ul{
     list-style:none;
     display:flex;
     width:100%;
-    height:150px;
+    height:60px;
     gap:10px;
+    padding:10px;
     align-items:center;
     border-radius:20px;
     justify-content: space-around;
@@ -337,8 +435,8 @@ main .intro .introduce h1{
 .prodnav a{
     display:flex;
     align-items:center;
-    width:30%;
-    height:30%;
+    width:100%;
+    height:100%;
     padding:10px;
     justify-content: center;
     text-decoration:none;
@@ -361,3 +459,7 @@ a.currentprodnav{
     background-color:var(--secondary);
     color:var(--dark);
 }
+    /* code ends for the navbar of products */
+
+/* the code till here applies to product page only */
+
