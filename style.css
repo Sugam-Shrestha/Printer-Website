@@ -82,7 +82,7 @@ nav.centernav{
 transition is given 0.3 seconds so that hover animations will appear slower and disappear slower*/
 .centernav a{ 
     text-decoration:none;
-    border-radius:40px;
+    border-radius:30px;
     display:flex;
     margin:auto;
     align-items:center;
@@ -127,7 +127,7 @@ nav.rightnav{
 
 .rightnav a{
     text-decoration:none;
-    border-radius:40px;
+    border-radius:30px;
     display:flex;
     margin:auto;
     align-items:center;
