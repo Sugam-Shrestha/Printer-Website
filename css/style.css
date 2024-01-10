@@ -32,8 +32,6 @@ html{
 header{
     position:sticky;
     top:0;
-    background-color: var(--dark);
-    box-shadow: 5px 5px 3px var(--dark);
 }
 
 /* inline-flex is used to make the contents inside navbar in a straight horizontal line
@@ -521,3 +519,7 @@ main .blogcontent{
 .blogcontent h1{
     color:var(--light);
 }
+
+/* the code avobe applies to blog page only. */
+
+/* the code from here applies to 
