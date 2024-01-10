@@ -1,0 +1,523 @@
+/* setting the default margin and padding to 0px */
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family:monospace;
+}
+
+/* variable declared for colours for the website */ 
+:root{
+    --primary:#2274a5;
+    --secondary:#3afacd;
+    --alt:#8ebbff;
+    --dark:#131313;    
+    --light:#e7e5e5;
+}
+
+/* putting the background color of the whole page dark */ 
+
+/* code from here applies to all the pages*/
+
+html{
+    background-color:var(--dark);
+    overflow-x:hidden;
+}
+
+    /* code for navbar starts */
+
+/* in header postion:sticky; is used to make the navbar to always stay on the top
+   box-shadow is used to make the box shadow blur and 5px */
+
+header{
+    position:sticky;
+    top:0;
+    background-color: var(--dark);
+    box-shadow: 5px 5px 3px var(--dark);
+}
+
+/* inline-flex is used to make the contents inside navbar in a straight horizontal line
+    space-around is used to align the contents in navbar horizontally with space around nature.
+    gap is given so that the contents have some gap between them */
+
+.navbar{
+    display:inline-flex;
+    justify-content:space-around;
+    width:100%;
+    height:100px;
+    margin:auto;
+    gap:10%;
+}
+
+/* width of the logo is 200px*/
+
+.navbar .logo figure{
+    display:flex;
+    width:200px;
+}
+
+/* width of the logo is 100% that fits in the container figure */
+
+.navbar .logo figure img{
+    width:100%;
+    height:90px;
+}
+
+/* display:flex; is used to make the contents align horizontally and in center. */
+nav.centernav{
+    display:flex;
+    align-items:center;
+}
+
+/* the liststyle is set to none to make the bullet points disappear from the listitems
+    inline-flex is used to make the contents align horizontally with 40px of space between them. */
+.centernav ul{
+    list-style:none;
+    display:inline-flex;
+    gap:40px;
+    margin:auto;
+    align-items:center;
+}
+
+/* text decoration is none to remove the underline fron the anker. 
+transition is given 0.3 seconds so that hover animations will appear slower and disappear slower*/
+.centernav a{ 
+    text-decoration:none;
+    border-radius:30px;
+    display:flex;
+    margin:auto;
+    align-items:center;
+    justify-content: center;
+    width:90px;
+    height:90px;
+    padding:10px;
+    color:var(--light);
+    font-size:16px;
+    font-family:monospace;
+    transition:0.3s ease-in-out; 
+}
+
+/* when we hover over the anker links, the background color, text color and text-decoration changes. */
+.centernav a:hover{
+    background-color:var(--primary);
+    color:var(--secondary);
+}
+
+/* flex direction specifies in what direction the flex aligns either horizontal or vertical  */
+.centernav li {
+    display:flex;
+    margin:auto;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+}
+
+nav.rightnav{
+    display:flex;
+    align-items:center;
+}
+
+.rightnav ul{
+    list-style:none;
+    display:inline-flex;
+    margin:auto;
+    align-items:center;
+    gap:40px;
+}
+
+.rightnav a{
+    text-decoration:none;
+    border-radius:30px;
+    display:flex;
+    margin:auto;
+    align-items:center;
+    justify-content: center;
+    width:90px;
+    height:90px;
+    padding:10px;
+    color:var(--light);
+    font-size:16px;
+    font-family:monospace;
+    transition:0.3s ease-in-out; 
+}
+
+.rightnav a:hover{
+    background-color:var(--primary);
+    color:var(--secondary);
+    text-decoration:underline;
+}
+
+.rightnav li{
+    display:flex;
+    margin:auto;
+    align-items:center;
+    flex-direction:column;
+}
+
+figure.link{
+    display:flex;
+    width:30px;
+}
+
+figure.link img{
+    width:100%;
+}
+
+nav ul a.current{
+    background-color:var(--primary);
+}
+
+    /* code for navbar ends */
+
+/* the code till here applies to all the webpages */
+
+/* the code from here applies to home and product page only */
+
+    /* code for main division starts which contains all the contents */
+
+main{
+    display:flex;
+    width:90%;
+    margin:auto;
+}
+
+    /* code starts for intro of the page */
+
+main .intro{
+    display:flex;
+    width:100%;
+    align-items:center;
+    justify-content: center;
+    justify-content:space-around;
+    margin-top:30px;
+}
+
+main .intro .introduce h1{
+    color:var(--light);
+    font-size:50px;
+    font-family:monospace;
+    padding-left:10px;
+    border-left:5px solid var(--light);
+}
+
+.intro .introduce h1 span {
+    color:var(--primary);
+}
+
+.intro .introduce h2{
+    color:var(--secondary);
+    font-size:30px;
+    margin-top:10px;
+    border-left:5px solid var(--secondary);
+    padding-left:10px;
+}
+
+.intro .image{
+    display:flex;
+    justify-content:center;
+    width:40%;
+}
+
+.image img{
+    align-items: center;
+    width:70%;
+}
+
+    /* code ends for the intro of the page */
+
+    /* code starts for the products displayed on main page and products page */
+
+.content {
+    display:flex;
+    width:100%;
+    margin:auto;
+}
+
+.content .product{
+    margin:20px;
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    padding:10px;
+    border:2px solid var(--light);
+    box-shadow:0px 0px 20px var(--light);
+    border-radius:30px;
+}
+
+.productcontent{
+    display:flex;
+    flex-direction:column ;
+    width:90%;
+    margin:auto;
+}
+
+.productcontent .product{
+    margin:20px;
+    padding:10px;
+    border:2px solid var(--light);
+    box-shadow:0px 0px 20px var(--light);
+    border-radius:30px; 
+}
+
+.product .featured{
+    display:flex;
+    align-items: center;
+    gap:5px;
+    margin:auto;
+    padding:1px;
+    border-bottom: 3px solid var(--primary);
+}
+.content .featured figure{
+    width:25px;
+}
+
+.featured figure img{
+    width:100%;
+}
+
+.featured h1{
+    color:var(--light);
+    text-align:center;
+    font-size:23px;
+}
+
+.product .onsale{
+    display:flex;
+    align-items: center;
+    gap:5px;
+    margin:auto;
+    padding:1px;
+    border-bottom: 3px solid var(--primary);
+}
+
+.product .onsale figure{
+    width:25px;
+}
+
+.onsale figure img{
+    width:100%;
+}
+
+.onsale h1{
+    color:var(--light);
+    text-align:center;
+    font-size:23px;
+}
+
+.productcontainer{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin:10px;
+    border-radius: 20px;
+}
+
+.productitem{
+    display:flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    width:30%;
+    margin:10px;
+    flex-direction: column;
+    align-items:center;
+    border:2px solid var(--alt);
+    border-radius:10px;
+    padding:10px;
+    transition: 0.3s ease-in-out;
+}
+
+.productitem:hover{
+    background-color: var(--primary);
+    box-shadow: 0px 0px 20px var(--light);
+}
+
+.productitem h1{
+    margin-top:10px;
+    font-size:18px;
+    padding:5px;
+    color:var(--light);
+    text-align:center;
+    border-bottom:2px solid var(--secondary);
+    border-radius:15px;
+    box-shadow: 0px 0px 5px var(--primary);
+}
+
+.productitem figure{
+    width:200px;
+}
+
+.productitem img{
+    width:100%;
+    border-radius:10px;
+}
+
+.description ul{
+    padding:5px;
+    margin-left:15px;
+    border-left:5px solid var(--light)
+}
+
+.description li{
+    list-style:none;
+    color:var(--light);
+}
+
+.description .price{
+    padding-left: 10px;
+    margin-top:7px;
+    margin-left:15px;
+    color:var(--secondary);
+    border-left: 5px solid var(--secondary);
+}
+
+.productitem .buy-more {
+    display:flex;
+    align-items: center;
+    gap:10px;
+}
+
+.buy a{
+    text-decoration: none;
+    color:var(--light);
+}
+
+.buy p{
+    font-size:10px;
+    margin:5px;
+    padding:10px 20px;
+    border:2px solid var(--secondary);
+    border-radius:20px;
+}
+
+.buy p:hover{
+    color:var(--dark);
+    background-color: var(--secondary);
+    box-shadow: 0px 0px 10px var(--dark);
+}
+
+.more a{
+    text-decoration: none;
+    color:var(--light);
+}
+
+.more p{
+    font-size:10px;
+    margin:5px;
+    padding:10px 20px;
+    border:2px solid var(--light);
+    border-radius:20px;
+}
+
+.more p:hover{
+    color:var(--dark);
+    background-color: var(--light);
+    box-shadow: 0px 0px 10px var(--dark);
+}
+
+    /* code ends for the products displayed on homepage and products page */
+
+    /* code for main division ends */
+
+/* the code till here applies to homepage and product page only */
+
+
+
+/* the code from here applies to product page only */
+
+    /* code starts for navigation bar of products */
+.prodnav{
+    margin-top:20px;
+    display:flex;
+    width:100%;
+    border:2px solid var(--secondary);
+    border-radius:35px;
+}
+.prodnav ul{
+    list-style:none;
+    display:flex;
+    width:100%;
+    margin:auto;
+    height:60px;
+    gap:10px;
+    padding:10px;
+    align-items:center;
+    border-radius:20px;
+    justify-content: space-around;
+}
+
+.prodnav a{
+    display:flex;
+    align-items:center;
+    width:100%;
+    height:100%;
+    padding:10px;
+    justify-content: center;
+    text-decoration:none;
+    color:var(--light);
+    border-radius:20px;
+    transition: 0.2s ease-in-out;
+}
+
+.prodnav li{
+    text-align:center;
+}
+
+.prodnav a:hover{
+    color:var(--dark);
+    text-decoration:underline;
+    background-color:var(--secondary);
+}
+
+a.currentprodnav{
+    background-color:var(--secondary);
+    color:var(--dark);
+}
+    /* code ends for the navbar of products */
+
+    /* code starts for header for type of printers */
+
+.productsheader{
+    display:flex;
+    align-items:center;
+    width:90%;
+    margin:auto;
+    justify-content: space-between;
+}
+
+.productsheader p{
+    color:var(--secondary);
+    text-align:center;
+    font-size:20px;
+    border-left:3px solid var(--secondary);
+    border-right:3px solid var(--secondary);
+    margin-top:20px;
+    border-radius:10px;
+}
+
+.productsheader a{
+    text-decoration: none;
+    color:var(--secondary);
+    font-size:20px;
+    padding:3px 7px;
+    border:2px solid var(--secondary);
+    border-radius:20px;
+    transition:0.3s ease-in-out;
+}
+
+.productsheader a:hover{
+    background-color:var(--secondary);
+    color:var(--dark);
+}
+
+/* the code till here applies to product page only */
+
+/* the code from here applies to blog page only */
+
+main .blogcontent{
+    
+}
+
+
+.blogcontent h1{
+    color:var(--light);
+}
