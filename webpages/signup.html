@@ -114,51 +114,47 @@
                                     <div class="name">
                                         <fieldset class="dualformcontent">
                                             <legend>FULL NAME</legend>
-                                            <div class="firstname">
-                                                <input type="text" name="fname" placeholder="Enter your First Name">
-                                            </div>
-                                            <br>
-                                            <br>
-                                            <div class="lastname">
-                                                <input type="text" name="lname" placeholder="Enter you Last Name">
-                                            </div>
+                                                <input style="font-size:17px;" type="text" name="fname" placeholder="Enter your First Name">
+                                                <input style="font-size:17px;" type="text" name="lname" placeholder="Enter you Last Name">
                                         </fieldset>
                                     </div>
                                     <br>
                                     <div class="email">
                                         <fieldset class="formcontent">
                                             <legend>EMAIL ADDRESS</legend>
-                                            <input type="text" name="email" placeholder="Enter your email address">
+                                            <input style="font-size:17px;" type="text" name="email" placeholder="Enter your email address">
                                         </fieldset>
                                     </div>
                                     <br>
-                                    <div class="phone">
-                                        <fieldset class="formcontent">
-                                            <legend>PHONE NUMBER</legend>
-                                            <input type="text" name="number" placeholder="Enter your number">
-                                        </fieldset>
+                                    <div class="phonerole">
+                                        <div class="phone">
+                                            <fieldset class="formcontent">
+                                                <legend>PHONE NUMBER</legend>
+                                                <input style="font-size:17px;" type="text" name="number" placeholder="Enter your number">
+                                            </fieldset>
+                                        </div>
+                                        <div class="role">
+                                            <fieldset class="formcontent">
+                                                <legend>YOU ARE A</legend>
+                                                <div class="dropdown">
+                                                    <select style="font-size:17px;" name="role" id="role">
+                                                        <option selected value="Student">STUDENT</option>
+                                                        <option value="Teacher">TEACHER</option>
+                                                        <option value="Garduian">PARENT</option>
+                                                    </select>
+                                                </div>
+                                            </fieldset>
+                                        </div>
                                     </div>
                                     <br>
                                     <div class="password">
                                         <fieldset class="dualformcontent">
                                             <legend>PASSWORD</legend>
-                                            <input type="password" name="password" placeholder="Enter your password">
-                                            <input type="password" name="confirmpass" placeholder="Confirm your password">
+                                            <input style="font-size:17px;" type="password" name="password" placeholder="Enter your password">
+                                            <input style="font-size:17px;" type="password" name="confirmpass" placeholder="Confirm your password">
                                         </fieldset>
                                     </div>
                                     <br>
-                                    <div class="role">
-                                        <fieldset class="formcontent">
-                                            <legend>YOU ARE A</legend>
-                                            <div class="dropdown">
-                                                <select name="role" id="role">
-                                                    <option selected value="Student">Student</option>
-                                                    <option value="Teacher">Teacher</option>
-                                                    <option value="Garduian">Garduian</option>
-                                                </select>
-                                            </div>
-                                        </fieldset>
-                                    </div>
                                     <div class="gender">
                                         <fieldset class="formcontent">
                                             <legend>GENDER</legend>
@@ -168,17 +164,39 @@
                                             <label>
                                                 <input type="radio" name="gender" value="female">Female
                                             </label>
-                                            <label><input type="radio" name="gender" value="nothing">Prefer not to say</label>
+                                            <label>
+                                                <input type="radio" name="gender" value="nothing">Prefer not to say
+                                            </label>
                                         </fieldset>
                                     </div>
                                     <br>
-
-                                    <button onclick="submit()">Sign Up</button>
+                                    <div class="checkbox">
+                                        <fieldset class="formcontent">
+                                            <legend>RULES</legend>
+                                            <input type="checkbox" name="agree"> 
+                                            <label for="agree">CREATING AN ACCOUNT MEANS YOU'RE OKAY WITH OUR TERMS OF SERVICE, PRIVACY POLICY, AND OUR DEFAULT NOTIFICATION SETTINGS.</label>
+                                        </fieldset>
+                                    </div>
+                                    <br>
+                                    <div class="submit">
+                                        <button style="font-size:17px;" onclick="submit()">Sign Up</button>
+                                    </div>                           
                                 </form>
+                                <br>
+                                <hr>
+                                <br>
                             </div>
+                            <h1 style="font-size:20px;">OR SIGNUP WITH</h1>
                             <div class="socials">
-                                <img src="/socialicons/facebook.png" alt="facebook logo">
-                                <img src="/socialicons/instagram.png" alt="instagram logo">
+                                
+                                <button onclick="loggedin()"><img src="/socialicons/google.png" alt="google logo"></button>
+                                <button onclick="loggedin()"><img src="/socialicons/facebook.png" alt="facebook logo"></button>
+                                <button onclick="loggedin()"><img src="/socialicons/instagram.png" alt="instagram logo"></button>
+                                <button onclick="loggedin()"><img src="/socialicons/linkedin.png" alt="linkedin logo"></button>
+                            </div>
+                            <br>
+                            <div class="havacct">   
+                                <h4>HAVE AN ACCOUNT? <a href="/webpages/login.html">LOGIN HERE</a></h4>
                             </div>
                             
                         </div>
