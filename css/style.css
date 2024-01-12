@@ -526,7 +526,7 @@ a.currentprodnav{
 
 .logreg{
     width:70%;
-    height:auto;
+    height:75vh;
     margin:auto;
     margin-top:5%;
     border-radius:10px;
@@ -536,8 +536,8 @@ a.currentprodnav{
 
 .logreg .leftside{
     background-color: var(--alt);
-    height:60vh;
-    width:35%;
+    height:auto;
+    width:30%;
     border-radius:10px 20px 20px 10px;
     box-shadow: 0px 0px 50px var(--dark);
     display:flex;
@@ -582,7 +582,7 @@ a.currentprodnav{
 }
 
 .logreg .rightside{
-    width:65%;
+    width:70%;
     display:flex;
 }
 
@@ -593,7 +593,7 @@ a.currentprodnav{
 }
 
 .rightcontainer .rightcontent{
-    width:80%;
+    width:90%;
     margin:auto;
     display:flex;
     flex-direction:column;
@@ -601,14 +601,12 @@ a.currentprodnav{
 }
 
 .rightcontainer .form{
-    width:85%;
+    width:100%;
     margin:auto;
 }
 
 .form fieldset.dualformcontent{
     display:flex;
-    justify-content: space-between;
-    gap:10px;
     padding:3px;
     border:2px solid var(--secondary);
     border-radius:5px;
@@ -620,38 +618,90 @@ a.currentprodnav{
     border-radius:5px;
 }
 
-.form .name input[type="text"],.form .password input[type="text"]{ 
-    -webkit-column-width: 100%;
+.form .name input[type="text"], .form .password input[type="password"]{
+    width:49%;
+    margin:auto;
+    padding:10px;
+    border:2px solid var(--light);
+    border-radius:5px;
+    background-color:var(--alt);
+}
+
+.form .logpassword input[type="password"]{
+    width:100%;
+    margin:auto;
+    padding:10px;
+    border:2px solid var(--light);
+    border-radius:5px;
+    background-color:var(--alt);
 }
 
 .form .email input[type=text]{
     width:100%;
+    background-color:var(--alt);
+    padding:10px;
+    border-radius:5px;
+    border:2px solid var(--light);
+}
+
+.form .phonerole{
+    display:flex;
+    gap:10px;
+}
+
+.phonerole .phone{
+    flex:50%;
+    flex-wrap:wrap;
+}
+
+.phonerole .role{
+    flex:50%;
 }
 
 .form .role .dropdown{
-    width:200px;
+    width:100%;
 }
 
-.form .gender fieldset.genders{
-    padding:20px;
+.role select{
+    width:100%;
+    padding:10px;
+    background-color:var(--alt);
+    border-radius:5px;
+    border:2px solid var(--light);
+}
+
+.form .phone input[type="text"]{
+    width:100%;
+    border:2px solid var(--light);
+    background-color:var(--alt);
+    padding:10px;
+    border-radius:5px;
+}
+
+.form .gender fieldset.formcontent{
+    padding:10px;
     border:2px solid var(--secondary);
     border-radius:5px;
+    display:flex;
+    width:60%;
+    justify-content:center;
+    gap:20px;
 }
 
-
-.form input[type="text"]{
-    padding:10px 15px;
-    border: 2px solid var(--light);
+.gender label{
+    padding:5px;
     border-radius:5px;
+    font-size:16px;
     background-color:var(--alt);
 }
 
-.form input[type="password"]{
-    width:100%;
-    padding:10px 30px;
-    border: 2px solid var(--light);
-    border-radius:5px;
-    background-color:var(--alt);
+.gender label:hover{
+    cursor:pointer;
+}
+
+.checkbox label{
+    color:var(--secondary);
+    font-size:15px;
 }
 
 fieldset legend{
@@ -659,10 +709,44 @@ fieldset legend{
     font-size:14px;
 }
 
+.form .submit button,.form .login button{
+    padding:10px;
+    background-color: var(--alt);
+    border:2px solid var(--light);
+    border-radius:5px;
+    width:100%;
+    transition: 0.1s ease-in-out;
+}
+
+.form .submit button:hover,.form .login button:hover{
+    background-color:var(--dark);
+    color:var(--light);
+}
+
 .socials img{
     width:40px;
     height:40px;
 }
+
+.socials button{
+    background-color:var(--primary);
+    border:none;
+}
+
+button:hover{
+    cursor:pointer;
+}
+
+.havacct a{
+    color:var(--secondary);
+    text-decoration:none;
+}
+
+.havacct a:hover{
+    color:var(--light);
+    text-decoration:underline;
+}
+
 
 
 
