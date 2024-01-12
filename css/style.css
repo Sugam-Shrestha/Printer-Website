@@ -10,8 +10,8 @@
 :root{
     --primary:#2274a5;
     --secondary:#3afacd;
-    --alt:#8ebbff;
-    --dark:#131313;    
+    --alt:#b5e6db;
+    --dark:#212122;    
     --light:#e7e5e5;
 }
 
@@ -253,7 +253,7 @@ main .intro .introduce h1{
     margin:20px;
     padding:10px;
     border:2px solid var(--light);
-    box-shadow:0px 0px 20px var(--light);
+    box-shadow:0px 0px 10px var(--light);
     border-radius:30px; 
 }
 
@@ -377,6 +377,7 @@ main .intro .introduce h1{
 .buy a{
     text-decoration: none;
     color:var(--light);
+
 }
 
 .buy p{
@@ -396,6 +397,7 @@ main .intro .introduce h1{
 .more a{
     text-decoration: none;
     color:var(--light);
+    box-shadow: 0px 0px 5px var(--secondary)
 }
 
 .more p{
@@ -489,6 +491,7 @@ a.currentprodnav{
     border-left:3px solid var(--secondary);
     border-right:3px solid var(--secondary);
     margin-top:20px;
+    padding:4px 10px;
     border-radius:10px;
 }
 
@@ -504,16 +507,13 @@ a.currentprodnav{
 
 .productsheader a:hover{
     background-color:var(--secondary);
+    box-shadow: 0px 0px 10px var(--light);
     color:var(--dark);
 }
 
 /* the code till here applies to product page only */
 
 /* the code from here applies to blog page only */
-
-main .blogcontent{
-    
-}
 
 
 .blogcontent h1{
@@ -522,4 +522,126 @@ main .blogcontent{
 
 /* the code avobe applies to blog page only. */
 
-/* the code from here applies to 
+/* the code from here applies to login */
+
+.logreg{
+    width:70%;
+    height:auto;
+    margin:auto;
+    margin-top:5%;
+    border-radius:10px;
+    background-color: var(--primary);
+    display:flex;
+}
+
+.logreg .leftside{
+    background-color: var(--alt);
+    height:60vh;
+    width:35%;
+    border-radius:10px 20px 20px 10px;
+    box-shadow: 0px 0px 50px var(--dark);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    gap:100px;
+}
+
+.leftside .leftcontainer{
+    width:100%;
+}
+
+.leftside .leftcontent{
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    gap:70px;
+    float:right;
+    transition:0.3s ease-in-out;
+}
+.leftside .login, .leftside .signup{
+    padding:30px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.leftside a{
+    text-decoration:none;
+    color:var(--dark);
+}
+
+.leftside h1{
+    text-align:center;
+}
+
+.leftcontent #currentlogreg{
+    background-color:var(--primary);
+}
+
+.leftcontent a:hover{
+    color:var(--dark);
+}
+
+.logreg .rightside{
+    width:65%;
+    display:flex;
+}
+
+.rightcontainer{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.rightcontainer .rightcontent{
+    width:80%;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.form .name fieldset.fullname{
+    display:flex;
+    gap:10px;
+    padding:5px;
+    border:2px solid var(--secondary);
+    border-radius:5px;
+}
+
+.form .name input[type="text"]{
+    width:250px;
+}
+
+.form .gender fieldset.genders{
+    padding:20px;
+    border:2px solid var(--secondary);
+    border-radius:5px;
+}
+
+.form .gender input[type="radio"]{
+}
+
+.form input[type="text"]{
+    width:310px;
+    padding:10px 30px;
+    border: 2px solid var(--light);
+    border-radius:5px;
+    background-color:var(--alt);
+}
+
+fieldset legend{
+    color:var(--secondary);
+    font-size:16px;
+}
+
+.socials img{
+    width:40px;
+    height:40px;
+}
+
+
+
+
+
+
+
