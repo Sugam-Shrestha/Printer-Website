@@ -600,16 +600,36 @@ a.currentprodnav{
     align-items:center;
 }
 
-.form .name fieldset.fullname{
+.rightcontainer .form{
+    width:85%;
+    margin:auto;
+}
+
+.form fieldset.dualformcontent{
     display:flex;
+    justify-content: space-between;
     gap:10px;
-    padding:5px;
+    padding:3px;
     border:2px solid var(--secondary);
     border-radius:5px;
 }
 
-.form .name input[type="text"]{
-    width:250px;
+.form fieldset.formcontent{
+    padding:3px;
+    border:2px solid var(--secondary);
+    border-radius:5px;
+}
+
+.form .name input[type="text"],.form .password input[type="text"]{ 
+    -webkit-column-width: 100%;
+}
+
+.form .email input[type=text]{
+    width:100%;
+}
+
+.form .role .dropdown{
+    width:200px;
 }
 
 .form .gender fieldset.genders{
@@ -618,11 +638,16 @@ a.currentprodnav{
     border-radius:5px;
 }
 
-.form .gender input[type="radio"]{
-}
 
 .form input[type="text"]{
-    width:310px;
+    padding:10px 15px;
+    border: 2px solid var(--light);
+    border-radius:5px;
+    background-color:var(--alt);
+}
+
+.form input[type="password"]{
+    width:100%;
     padding:10px 30px;
     border: 2px solid var(--light);
     border-radius:5px;
@@ -631,7 +656,7 @@ a.currentprodnav{
 
 fieldset legend{
     color:var(--secondary);
-    font-size:16px;
+    font-size:14px;
 }
 
 .socials img{
