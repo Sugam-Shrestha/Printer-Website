@@ -4,8 +4,10 @@
         <meta name="author" content="Sugam Shrestha">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale="1.0">
-        <title>LOGIN</title>
+        <title>SIGN UP</title>
         <link rel="stylesheet" href="/css/style.css">
+        <script>
+        </script>
     </head>
     <body>
         <header style="box-shadow:5px 5px 3px var(--dark); background-color:var(--dark);">
@@ -91,12 +93,12 @@
                 <div class="leftside">
                     <div class="leftcontainer">
                         <div class="leftcontent">
-                            <div class="login"  id="currentlogreg">
+                            <div class="login">
                                 <a href="/webpages/login.html">
-                                    <H1>LOGIN</H1>
+                                    <h1>LOGIN</h1>
                                 </a>
                             </div>
-                            <div class="signup" >
+                            <div class="signup" id="currentlogreg">
                                 <a href="/webpages/signup.html">
                                     <h1>SIGN UP</h1> 
                                 </a>
@@ -105,7 +107,50 @@
                     </div>
                 </div> 
                 <div class="rightside">
-
+                    <div class="rightcontainer">
+                        <div class="rightcontent">
+                            <div class="form">
+                                <form name="signup form" onsubmit="">
+                                    <div class="name">
+                                        <fieldset class="fullname">
+                                            <legend>Full Name</legend>
+                                            <div class="firstname">
+                                                <input type="text" name="fname" placeholder="Enter your First Name">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div class="lastname">
+                                                <input type="text" name="lname" placeholder="Enter you Last Name">
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <div class="gender">
+                                        <fieldset class="genders">
+                                            <legend>Gender</legend>
+                                            <input type="radio" name="gender" value="male" checked>Male
+                                            <input type="radio" name="gender" value="female">Female
+                                            <input type="radio" name="gender" value="nothing">Prefer not to say
+                                        </fieldset>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <div class="email">
+                                        <fieldset class="emails">
+                                            <legend>Email Address</legend>
+                                            <input type="text" name="email" placeholder="enter your email address">
+                                        </fieldset>
+                                    </div>
+                                    <br>
+                                </form>
+                            </div>
+                            <div class="socials">
+                                <img src="/socialicons/facebook.png" alt="facebook logo">
+                                <img src="/socialicons/instagram.png" alt="instagram logo">
+                            </div>
+                        </div>
+                    </div>
                 </div>               
             </div>
         </main>
