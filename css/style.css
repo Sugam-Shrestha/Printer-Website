@@ -40,9 +40,9 @@ header{
     gap is given so that the contents have some gap between them */
 
 .navbar{
-    display:inline-flex;
+    display:flex;
     justify-content:space-around;
-    width:100%;
+    width:90%;
     height:100px;
     margin:auto;
     gap:10%;
