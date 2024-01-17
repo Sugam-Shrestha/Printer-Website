@@ -7,17 +7,64 @@
         <title>HOME</title>
         <link rel="stylesheet" href="/css/style.css">
         <style>
-            .navbar{
-                margin:auto;
-                gap:10%;
+            main .intro{
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                justify-content: space-around;
             }
+
+            main .intro .introduce h1{
+                color:var(--light);
+                font-family:monospace;
+                border-left:5px solid var(--light);
+            }
+
+            .intro .introduce h2{
+                color:var(--secondary);
+                margin-top:10px;
+                border-left:5px solid var(--secondary);
+            }
+
+            .intro .image{
+                display:flex;
+                justify-content:center;
+            }
+
+            .maincontent .product{
+                display:flex;
+                flex-direction: column;
+                border:2px solid var(--light);
+                box-shadow:0px 0px 20px var(--light);
+            }
+
+            .product .featured, .product .onsale{
+                display:flex;
+                align-items: center;
+                gap:5px;
+                margin:auto;
+                border-bottom: 3px solid var(--primary);
+                border-radius:10px;
+                padding:3px 10px;
+            }
+
+            .featured h1{
+                color:var(--light);
+            }
+
+            .onsale h1{
+                color:var(--light);
+                text-align:center;
+                font-size:23px;
+            }
+
         </style>
     </head>
     <body>
-        <header style="box-shadow:5px 5px 3px var(--dark); background-color:var(--dark);">
-            <div class="navbar" style="width:100%; height:100px;">
+        <header>
+            <div class="navbar">
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="/index.html">
                     <figure>
                     <img src="../images/logo.png" alt="logo">
                     </figure>
@@ -25,7 +72,7 @@
                 </div>
                 <nav class="centernav">
                     <ul>
-                        <a href="index.html" class="current">
+                        <a href="/index.html" class="current">
                             <li>
                                 <figure class="link">
                                     <img src="../images/home.png">
@@ -69,9 +116,14 @@
                 </nav>
                 <nav class="rightnav">
                     <ul>
+                        <div class="searchbox">
+                            <input type="text" placeholder="SEARCH">
+                            <figure class="searchlogo">
+                                <img src="/images/search.png" alt="searchlogo">
+                            </figure>
+                        </div>
                         <a href="/webpages/contactus.html">
                             <li>                            
-                            
                                 <figure class="link">
                                     <img src="../images/contact.png">
                                 </figure>
@@ -79,8 +131,7 @@
                             </li>
                         </a>
                         <a href="/webpages/login.html">
-                            <li>
-                            
+                            <li>                       
                                 <figure class="link">
                                     <img src="../images/login.png">
                                 </figure>
@@ -92,30 +143,30 @@
                 </nav>
             </div>
         </header>
-        <main class="maincontent">
-            <div class="content-container">
-                <div class="intro">
+        <main class="maincontent" style="display:flex; justify-content:center;">
+            <div class="maincontent-container" style="width:100%;">
+                <div class="intro" style="width:100%;">
                     <div class="introduce">
-                        <h1>
-                            PRINTER <span>HUB</span>
+                        <h1 style="padding-left: 10px; font-size:50px;">
+                            PRINTER <span style="color:var(--primary);">HUB</span>
                         </h1>
-                        <h2>
+                        <h2 style="font-size:30px; padding-left:10px;">
                             "Ink the Future: Your Ultimate Printer Destination!"
                         </h2>
                     </div>
-                    <div class="image">
-                        <img src="/images/printer.png" alt="image of printer">
+                    <div class="image" style="width:35%;">
+                        <img style="width:100%;" src="/images/printer.png" alt="image of printer">
                     </div>
                 </div>
-                <div class="content">
+                <div class="allcontent" style="display:flex; width:100%; margin:auto;">
                     <div class="blog">
                     </div>
-                    <div class="product">
+                    <div class="product" style="width:100%; padding:10px; margin:20px;border-radius:30px;">
                         <div class="featured">
-                            <figure class="feature">
-                                <img src="/images/feature.png" alt="featured image">
+                            <figure class="feature" style="width:25px;">
+                                <img src="/images/feature.png" alt="featured image" style="width:100%;">
                             </figure>
-                            <h1>FEATURED</h1>
+                            <h1 style="text-align:center; font-size:23px;">FEATURED</h1>
                         </div>
                         <div class="productcontainer">
                             <div class="productitem">
@@ -139,14 +190,14 @@
                                 </div>
                                 <div class="buy-more">
                                     <div class="buy">
-                                        <a href="#">
+                                        <a id="buy">
                                             <div class="button">
                                                 <p>BUY</p>
                                             </div>
                                         </a>
                                     </div>
                                     <div class="more">
-                                        <a href="/webpages/blog-details.html">
+                                        <a href="/webpages/product-details.html">
                                             <div>
                                                 <p>SEE MORE</p>
                                             </div>
@@ -264,8 +315,8 @@
                             </div>
                         </div>
                         <div class="onsale">
-                            <figure class="sale">
-                                <img src="/images/sale.png" alt="sale icon">
+                            <figure class="sale" style="width:25px;">
+                                <img src="/images/sale.png" alt="sale icon" style="width:100%;">
                             </figure>
                             <h1>ON SALE</h1>
                         </div>
@@ -423,7 +474,26 @@
             </div>
         </main>
         <footer>
-
+            <div class="footercontent">
+                <div class="footerintro">
+                    <h1>
+                        PRINTER <span style="padding:10px; color:var(--secondary);">HUB</span>
+                    </h1>
+                    <div class="socialiconsf">  
+                        <button><img src="/socialicons/google.png" alt="google logo"></button>
+                        <button><img src="/socialicons/facebook.png" alt="facebook logo"></button>
+                        <button><img src="/socialicons/instagram.png" alt="instagram logo"></button>
+                        <button><img src="/socialicons/linkedin.png" alt="linkedin logo"></button>
+                        <button><img src="/socialicons/youtube.png" alt="youtube logo"></button>
+                        <button><img src="/socialicons/twitter.png" alt="twitter logo"></button>
+                    </div>
+                    <div class="links">
+                        <a href="/webpages/aboutus.html">Learn more about us</a>
+                        <a href="/webpages/contactus.html">Contact us here</a>
+                        <a href="/webpages/product.html">See all our products</a>
+                    </div>
+                </div>
+            </div>
         </footer>
     </body>
 </html>

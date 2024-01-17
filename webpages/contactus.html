@@ -7,6 +7,22 @@
         <title>CONTACT US</title>
         <link rel="stylesheet" href="/css/style.css">
         <style>
+            .contact{
+                margin:auto;
+                margin-top:20px;
+            }
+
+            .contact .contactcontainer{
+                margin:auto;
+                background-color: var(--primary);
+                display:flex;
+                align-items:center;
+            }
+
+            .contact .contactcontent{
+                margin:auto;
+            }
+
             .subject input[type="text"]{
                 width:100%;
                 padding:10px;
@@ -15,12 +31,14 @@
                 background-color:var(--alt);
                 font-size:18px;
             }
+
             .messege textarea{
                 border-radius:5px;
                 border: 2px solid var(--light);
                 padding:10px;
                 background-color: var(--alt);
             }
+
             button{
                 padding:10px;
                 font-size:16px;
@@ -29,6 +47,7 @@
                 border-radius:5px;
                 transition: 0.2s ease-in-out;
             }
+
             button:hover{
                 background-color: var(--dark);
                 color:var(--light);
@@ -92,9 +111,14 @@
                 </nav>
                 <nav class="rightnav">
                     <ul>
+                        <div class="searchbox">
+                            <input type="text" placeholder="SEARCH">
+                            <figure class="searchlogo">
+                                <img src="/images/search.png" alt="searchlogo">
+                            </figure>
+                        </div>
                         <a href="/webpages/contactus.html" class="current">
                             <li>                            
-                            
                                 <figure class="link">
                                     <img src="../images/contact.png">
                                 </figure>
@@ -115,11 +139,11 @@
             </div>
         </header>
         <main>
-            <div class="contact">
-                <div class="contactcontainer">
-                    <div class="contactcontent">
+            <div class="contact" style="width:90%;">
+                <div class="contactcontainer" style="width:75%; height:90vh; padding:20px; border-radius: 20px;;">
+                    <div class="contactcontent" style="width:60%;">
                         <div class="form">
-                            <form name="signup form" onsubmit="">
+                            <form name="contact_form" onsubmit="">
                                 <div class="name">
                                     <fieldset class="dualformcontent">
                                         <legend>FULL NAME</legend>
@@ -186,5 +210,27 @@
                 </div>
             </div>
         </main>
+        <footer>
+            <div class="footercontent">
+                <div class="footerintro">
+                    <h1>
+                        PRINTER <span style="padding:10px; color:var(--secondary);">HUB</span>
+                    </h1>
+                    <div class="socialiconsf">  
+                        <button><img src="/socialicons/google.png" alt="google logo"></button>
+                        <button><img src="/socialicons/facebook.png" alt="facebook logo"></button>
+                        <button><img src="/socialicons/instagram.png" alt="instagram logo"></button>
+                        <button><img src="/socialicons/linkedin.png" alt="linkedin logo"></button>
+                        <button><img src="/socialicons/youtube.png" alt="youtube logo"></button>
+                        <button><img src="/socialicons/twitter.png" alt="twitter logo"></button>
+                    </div>
+                    <div class="links">
+                        <a href="/webpages/aboutus.html">Learn more about us</a>
+                        <a href="/webpages/contactus.html">Contact us here</a>
+                        <a href="/webpages/product.html">See all our products</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
