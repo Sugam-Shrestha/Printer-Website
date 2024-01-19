@@ -21,6 +21,7 @@
 html{
     background-color:var(--dark);
     overflow-x:hidden;
+    position:relative;
 }
 
     /* code for navbar starts */
@@ -335,7 +336,7 @@ main{
 
 
 
-/* the code from here applies to product page only */
+/* the code from here applies to product page and printer pages only */
 
     /* code starts for navigation bar of products */
 .prodnav{
@@ -408,7 +409,8 @@ a.currentprodnav{
     border-radius:10px;
 }
 
-/* the code till here applies to product page only */
+/* the code till here applies to product page and printer pages 
+only */
 
 /* the code from here applies to blog page only */
 
@@ -545,7 +547,7 @@ a.currentprodnav{
 
 .logreg{
     width:70%;
-    height:700px;
+    height:900px;
     margin:auto;
     margin-top:5%;
     border-radius:10px;
@@ -776,8 +778,7 @@ footer{
     width:100%;
     height:250px;
     background-color:var(--primary);
-    border-radius: 40% 40% 0px 0px;
-    margin-top:3%;
+    margin-top:5%;
 }
 
 .footercontent h1{
@@ -785,12 +786,41 @@ footer{
     font-size:50px;
 }
 
-footer .links{
-    padding:20px;
-    width:100%;
-    margin:auto;
+footer .footerdown{
     display:flex;
+    justify-content: space-around;
+    gap:5px;
+    width:80%;
+    margin:auto;
+}
+
+footer .socialiconsf{
+    flex:50%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+footer .socialiconsf button{
+    background-color:transparent;
+    border:none;
+}
+footer .socialiconsf img{
+    width:40px;
+    height:auto;
+    background-color:transparent;
+}
+
+footer .links{
+    padding:10px;
+    flex:50%;
+    margin:0 ;
+    display:flex;
+    flex-direction:column;
     justify-content:center;
+    align-items: center;
 }
 
 footer .links a{
@@ -802,23 +832,6 @@ footer .links a{
 
 footer .links a:hover{
     color:var(--alt);
-}
-
-footer .socialiconsf{
-    display:flex;
-    justify-content: center;
-    gap:0.5%;
-    padding:10px;
-}
-
-footer .socialiconsf button{
-    background-color:transparent;
-    border:none;
-}
-footer .socialiconsf img{
-    width:40px;
-    height:auto;
-    background-color:transparent;
 }
 
 
