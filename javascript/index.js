@@ -1,3 +1,3 @@
 function suscribed(){
-    alert("thanks for suscribing.");
+    alert("Thankyou for following us. Stay tuned for more.")
 }
