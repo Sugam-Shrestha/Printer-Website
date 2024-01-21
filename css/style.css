@@ -731,21 +731,6 @@ fieldset legend{
     font-size:14px;
 }
 
-.form .submit button,.form .login button{
-    padding:10px;
-    background-color: var(--alt);
-    border:2px solid var(--light);
-    border-radius:5px;
-    width:40%;
-    transition: 0.2s ease-in-out;
-}
-
-.form .submit button:hover,.form .login button:hover{
-    background-color:var(--dark);
-    color:var(--light);
-    box-shadow: 0px 0px 15px var(--dark);
-}
-
 .socials img{
     width:40px;
     height:40px;
@@ -771,6 +756,23 @@ button:hover{
 }
 
 /* the code above applies to login and signup and contact pages */
+
+/* this code is for the login signup and submit buttons on the forms*/
+.form input[type="submit"]{
+    font-size:16px;
+    padding:10px;
+    background-color: var(--alt);
+    border:2px solid var(--light);
+    border-radius:5px;
+    width:40%;
+    transition: 0.2s ease-in-out;
+}
+
+.form input[type="submit"]:hover{
+    color:var(--dark);
+    box-shadow: 0px 0px 15px var(--dark);
+    cursor:pointer;
+}
 
 /* the code from here applies to all the footers */
 

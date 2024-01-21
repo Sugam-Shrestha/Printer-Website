@@ -117,7 +117,7 @@
                     <div class="rightcontainer">
                         <div class="rightcontent">
                             <div class="form">
-                                <form name="signup form" onsubmit="">
+                                <form name="signup_form" onsubmit="signup()">
                                     <div class="name">
                                         <fieldset class="dualformcontent">
                                             <legend>FULL NAME</legend>
@@ -180,13 +180,13 @@
                                     <div class="checkbox">
                                         <fieldset class="formcontent">
                                             <legend>RULES</legend>
-                                            <input type="checkbox" name="agree"> 
+                                            <input type="checkbox" id="agree"> 
                                             <label for="agree">CREATING AN ACCOUNT MEANS YOU'RE OKAY WITH OUR TERMS OF SERVICE, PRIVACY POLICY, AND OUR DEFAULT NOTIFICATION SETTINGS.</label>
                                         </fieldset>
                                     </div>
                                     <br>
                                     <div class="submit">
-                                        <button style="font-size:17px;" onclick="submit()">Sign Up</button>
+                                        <input type="submit" value="Sign Up"> 
                                     </div>                           
                                 </form>
                                 <br>
