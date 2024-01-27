@@ -21,26 +21,28 @@
 html{
     background-color:var(--dark);
     overflow-x:hidden;
-    position:relative;
 }
 
     /* code for navbar starts */
 
-/* in header postion:sticky; is used to make the navbar to always stay on the top
-   box-shadow is used to make the box shadow blur and 5px */
+/*  */
 
-header{
-    position:sticky;
-    top:0;
-    box-shadow:5px 5px 3px var(--dark); 
-    background-color:var(--dark);
+main{
+    padding-top:100px;
 }
 
-/* inline-flex is used to make the contents inside navbar in a straight horizontal line
+
+/* in navbar header postion:fixed; is used to make the navbar to always stay on the top
+   box-shadow is used to make the box shadow blur and 5pxinline-flex is used to make the contents inside navbar in a straight horizontal line
     space-around is used to align the contents in navbar horizontally with space around nature.
     gap is given so that the contents have some gap between them */
 
 .navbar{
+    position:fixed;
+    top:20;
+    left:0;
+    box-shadow:5px 5px 3px var(--dark); 
+    background-color:var(--dark);
     display:flex;
     justify-content:space-around;
     width:100%;
