@@ -27,10 +27,14 @@ html{
 
 /*  */
 
-main{
-    padding-top:100px;
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    box-shadow:5px 5px 3px var(--dark); 
+    background-color:var(--dark);
+    overflow:hidden;
 }
-
 
 /* in navbar header postion:fixed; is used to make the navbar to always stay on the top
    box-shadow is used to make the box shadow blur and 5pxinline-flex is used to make the contents inside navbar in a straight horizontal line
@@ -38,11 +42,6 @@ main{
     gap is given so that the contents have some gap between them */
 
 .navbar{
-    position:fixed;
-    top:20;
-    left:0;
-    box-shadow:5px 5px 3px var(--dark); 
-    background-color:var(--dark);
     display:flex;
     justify-content:space-around;
     width:100%;
@@ -201,6 +200,7 @@ main{
     display:flex;
     width:90%;
     margin:auto;
+    margin-top:100px;
 }
 
 .productcontent{
