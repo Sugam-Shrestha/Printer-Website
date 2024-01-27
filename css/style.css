@@ -792,10 +792,19 @@ footer{
 
 footer .footerdown{
     display:flex;
-    justify-content: space-around;
-    gap:5px;
-    width:80%;
-    margin:auto;
+    justify-content:center;
+    align-items: center;
+}
+
+footer .links a{
+    text-decoration:none;
+    color:var(--secondary);
+    padding:10px 40px;
+    font-size:16px;
+}
+
+footer .links a:hover{
+    color:var(--alt);
 }
 
 footer .socialiconsf{
@@ -838,7 +847,56 @@ footer .links a:hover{
     color:var(--alt);
 }
 
+/* the code from here applies to all the feedback */
 
+.comment-container {
+    height: 170px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 400px;
+    border: 2px solid var(--primary);
+    padding: 15px 10px;
+    box-shadow: 0px 0px 20px rgba(166, 166, 166, 0.541);
+    border-radius: 25px;
+}
+.comment-container h2 {
+    color: var(--primary);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 16px;
+    text-align: center;
+}
+textarea {
+    height: 30px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid var(--primary);
+    background-color: transparent;
+    color: var(--light);
+    margin-bottom: 10px;
+    resize: none;
+    outline: none;
+    text-align: left;
+    transition: .5s
+}
+input[type="Submit"], button {
+    padding: 7px 8px;
+    border: 2px solid var(--primary);
+    outline: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--light);
+}
+input[type="Submit"] {
+    color: var(--light);
+    background-color: var(--primary);
+}
+.btn {
+    display: none;
+}
 
 
 
