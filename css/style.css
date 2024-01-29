@@ -3,7 +3,7 @@
     margin:0px;
     padding:0px;
     box-sizing: border-box;
-    font-family:;
+    font-family:monospace;
 }
 
 /* variable declared for colours for the website */ 
@@ -23,6 +23,7 @@ html{
     overflow-x:hidden;
 }
 
+
     /* code for navbar starts */
 
 /* 
@@ -36,6 +37,7 @@ header{
     width:100%;
     box-shadow:0px 5px 3px var(--dark); 
     background-color:var(--dark);
+    z-index:100;
 }
 
 /* 
@@ -188,6 +190,7 @@ main{
     width:90%;
     margin:auto;
     margin-top:100px;
+    filter:blur(0px);
 }
 
 .productcontent{
@@ -271,36 +274,15 @@ main{
     border-left: 5px solid var(--secondary);
 }
 
-.productitem .buy-more {
+.productitem .more {
     display:flex;
     align-items: center;
     gap:10px;
 }
 
-.buy a{
-    text-decoration: none;
-    color:var(--light);
-
-}
-
-.buy p{
-    font-size:10px;
-    margin:5px;
-    padding:10px 20px;
-    border:2px solid var(--secondary);
-    border-radius:20px;
-}
-
-.buy p:hover{
-    color:var(--dark);
-    background-color: var(--secondary);
-    box-shadow: 0px 0px 10px var(--dark);
-}
-
 .more a{
     text-decoration: none;
     color:var(--light);
-    box-shadow: 0px 0px 5px var(--secondary)
 }
 
 .more p{
@@ -313,7 +295,7 @@ main{
 
 .more p:hover{
     color:var(--dark);
-    background-color: var(--light);
+    background-color: var(--secondary);
     box-shadow: 0px 0px 10px var(--dark);
 }
 
@@ -775,6 +757,7 @@ footer{
 .footercontent h1{
     text-align:center;
     font-size:50px;
+    filter:blur(0px);
 }
 
 footer .footerdown{

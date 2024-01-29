@@ -5,10 +5,30 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale="1.0">
         <title>ABOUT</title>
-        <link rel="stylesheet" href="/css/style.css">
-        <link rel="shortcut icon" href="/images/about.png">
-        <script src="/javascript/index.js"></script>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="shortcut icon" href="../images/about.png">
+        <script src="../javascript/index.js"></script>
     </head>
+    <style>
+
+        .person{
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content: space-around;
+            width:250px;
+            height:400px;
+            background-color: var(--primary);
+            border-radius:20px;
+        }
+        .person p{
+            font-size:14px;
+        }
+        img.personimg{
+            width:150px;
+            height:150px;
+        }
+    </style>
     <body>
         <header>
             <div class="navbar">
@@ -21,7 +41,7 @@
                 </div>
                 <nav class="centernav">
                     <ul>
-                        <a href="../index.html">
+                        <a href="../index.html" >
                             <li>
                                 <figure class="link">
                                     <img src="../images/home.png">
@@ -29,7 +49,7 @@
                                 HOME
                             </li>
                         </a>
-                        <a href="/webpages/blog.html">
+                        <a href="../webpages/blog.html">
                             <li>
                                 <figure class="link">
                                     <img src="../images/blog.png">
@@ -37,7 +57,7 @@
                                 BLOG
                             </li>
                         </a>
-                        <a href="/webpages/product.html">                          
+                        <a href="../webpages/product.html">                          
                             <li>
                                 <figure class="link">
                                     <img src="../images/product.png">
@@ -45,7 +65,7 @@
                                 PRODUCTS
                             </li>
                         </a>
-                        <a href="/webpages/research.html">
+                        <a href="../webpages/research.html">
                             <li>
                                 <figure class="link">
                                     <img src="../images/research.png">
@@ -53,7 +73,7 @@
                                 RESEARCH
                             </li>
                         </a>
-                        <a href="/webpages/aboutus.html"  class="current">
+                        <a href="../webpages/aboutus.html" class="current">
                             <li>
                                 <figure class="link">
                                     <img src="../images/about.png">
@@ -68,10 +88,10 @@
                         <div class="searchbox">
                             <input type="text" placeholder="SEARCH">
                             <figure class="searchlogo">
-                                <img src="/images/search.png" alt="searchlogo">
+                                <img src="../images/search.png" alt="searchlogo">
                             </figure>
                         </div>
-                        <a href="/webpages/contactus.html">
+                        <a href="../webpages/contactus.html">
                             <li>                            
                                 <figure class="link">
                                     <img src="../images/contact.png">
@@ -79,9 +99,8 @@
                                 CONTACT
                             </li>
                         </a>
-                        <a href="/webpages/login.html">
-                            <li>
-                            
+                        <a href="../webpages/login.html">
+                            <li>                       
                                 <figure class="link">
                                     <img src="../images/login.png">
                                 </figure>
@@ -93,9 +112,99 @@
                 </nav>
             </div>
         </header>
-        <main>
-
+        <main style="margin-top:150px;">
+            <div class="aboutcontent">
+                <div class="aboutban">
+                    <img style="width:100%; margin:auto; ">
+                    <img style="width:100%; height:45vh; border-radius:30px;" src="../images/aboutbanner.jpg" alt="printer banner"src="../images/aboutbanner.jpg">
+                </div>
+                <div class="aboutcon" style="display:flex; width:90%; margin:50px auto; align-items: center; justify-content:space-around;">
+                    <div class="person">
+                        <h1>
+                            Anurup Kharel
+                        </h1>
+                        <div class="perimage">
+                            <img class="personimg" src="../images/user.png">
+                        </div>
+                        <div class="perdesc">
+                            <p>
+                                age:19 years old <br>
+                                email:anurupkharel@gmail.com <br>   
+                                address: kathmandu,Nepal <br>
+                                phone-number:9876764534 <br>
+                                skills: HTML, CSS, Javascript <br>
+                            </p>
+                        </div>
+                        <div class="buttons">
+                            <a>view more</a>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <h1>
+                            Sugam Shrestha
+                        </h1>
+                        <div class="perimage">
+                            <img class="personimg" src="../images/user.png">
+                        </div>
+                        <div class="perdesc">
+                            <p>
+                                age:19 years old <br>
+                                email:anurupkharel@gmail.com <br>   
+                                address: kathmandu,Nepal <br>
+                                phone-number:9876764534 <br>
+                                skills: HTML, CSS, Javascript <br>
+                            </p>
+                        </div>
+                        <div class="buttons">
+                            <a>view more</a>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <h1>
+                            Prajol Bimali
+                        </h1>
+                        <div class="perimage">
+                            <img class="personimg" src="../images/user.png">
+                        </div>
+                        <div class="perdesc">
+                            <p>
+                                age:19 years old <br>
+                                email:anurupkharel@gmail.com <br>   
+                                address: kathmandu,Nepal <br>
+                                phone-number:9876764534 <br>
+                                skills: HTML, CSS, Javascript <br>
+                            </p>
+                        </div>
+                        <div class="buttons">
+                            <a>view more</a>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <h1>
+                            Priyanshu Bishwokarma
+                        </h1>
+                        <div class="perimage">
+                            <img class="personimg" src="../images/user.png">
+                        </div>
+                        <div class="perdesc">
+                            <p>
+                                age:19 years old <br>
+                                email:anurupkharel@gmail.com <br>   
+                                address: kathmandu,Nepal <br>
+                                phone-number:9876764534 <br>
+                                skills: HTML, CSS, Javascript <br>
+                            </p>
+                        </div>
+                        <div class="buttons">
+                            <a>view more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
+        <div class="sugam">
+
+        </div>
         <footer>
             <div class="footercontent">
                 <div class="footerintro">
@@ -115,7 +224,6 @@
                                 <button onclick="suscribed()"><img src="/socialicons/twitter.png" alt="twitter logo"></button>
                             </div> 
                         </div>
-                        
                         <div class="links">
                             <a href="/webpages/aboutus.html">Learn more about us</a>
                             <a href="/webpages/contactus.html">Contact us here</a>
