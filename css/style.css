@@ -25,29 +25,29 @@ html{
 
     /* code for navbar starts */
 
-/* in header postion:sticky; is used to make the navbar to always stay on the top
-   box-shadow is used to make the box shadow blur and 5px */
+/*  */
 
 header{
-    position:sticky;
+    position:fixed;
     top:0;
+    width:100%;
     box-shadow:5px 5px 3px var(--dark); 
     background-color:var(--dark);
+    overflow:hidden;
 }
 
-/* inline-flex is used to make the contents inside navbar in a straight horizontal line
+/* in navbar header postion:fixed; is used to make the navbar to always stay on the top
+   box-shadow is used to make the box shadow blur and 5pxinline-flex is used to make the contents inside navbar in a straight horizontal line
     space-around is used to align the contents in navbar horizontally with space around nature.
     gap is given so that the contents have some gap between them */
 
 .navbar{
     display:flex;
     justify-content:space-around;
-    width:90%;
+    width:100%;
     height:100px;
     margin:auto;
-    gap:10%;
 }
-
 /* width of the logo is 200px*/
 
 .navbar .logo figure{
@@ -72,8 +72,8 @@ nav.centernav{
     inline-flex is used to make the contents align horizontally with 40px of space between them. */
 .centernav ul{
     list-style:none;
-    display:inline-flex;
-    gap:40px;
+    display:flex;
+    gap:60px;
     margin:auto;
     align-items:center;
 }
@@ -114,17 +114,19 @@ transition is given 0.3 seconds so that hover animations will appear slower and 
 nav.rightnav{
     display:flex;
     align-items:center;
+    
 }
 
 .rightnav ul{
     list-style:none;
-    display:inline-flex;
+    display:flex;
     margin:auto;
     align-items:center;
-    gap:40px;
+    gap:20px;
 }
 
 .rightnav .searchbox{
+    width:195px;
     display:flex;  
     border: 2px solid var(--secondary); 
     border-radius:10px;
@@ -132,7 +134,7 @@ nav.rightnav{
 }
 
 .searchbox img{
-    width:25px;
+    width:20px;
 }
 
 .searchbox input{
@@ -198,6 +200,7 @@ main{
     display:flex;
     width:90%;
     margin:auto;
+    margin-top:100px;
 }
 
 .productcontent{
@@ -335,7 +338,7 @@ main{
 
 
 
-/* the code from here applies to product page only */
+/* the code from here applies to product page and printer pages only */
 
     /* code starts for navigation bar of products */
 .prodnav{
@@ -408,7 +411,8 @@ a.currentprodnav{
     border-radius:10px;
 }
 
-/* the code till here applies to product page only */
+/* the code till here applies to product page and printer pages 
+only */
 
 /* the code from here applies to blog page only */
 
@@ -546,7 +550,7 @@ a.currentprodnav{
 
 .logreg{
     width:70%;
-    height:700px;
+    height:900px;
     margin:auto;
     margin-top:5%;
     border-radius:10px;
@@ -730,21 +734,6 @@ fieldset legend{
     font-size:14px;
 }
 
-.form .submit button,.form .login button{
-    padding:10px;
-    background-color: var(--alt);
-    border:2px solid var(--light);
-    border-radius:5px;
-    width:40%;
-    transition: 0.2s ease-in-out;
-}
-
-.form .submit button:hover,.form .login button:hover{
-    background-color:var(--dark);
-    color:var(--light);
-    box-shadow: 0px 0px 15px var(--dark);
-}
-
 .socials img{
     width:40px;
     height:40px;
@@ -771,14 +760,30 @@ button:hover{
 
 /* the code above applies to login and signup and contact pages */
 
+/* this code is for the login signup and submit buttons on the forms*/
+.form input[type="submit"]{
+    font-size:16px;
+    padding:10px;
+    background-color: var(--alt);
+    border:2px solid var(--light);
+    border-radius:5px;
+    width:40%;
+    transition: 0.2s ease-in-out;
+}
+
+.form input[type="submit"]:hover{
+    color:var(--dark);
+    box-shadow: 0px 0px 15px var(--dark);
+    cursor:pointer;
+}
+
 /* the code from here applies to all the footers */
 
 footer{
     width:100%;
     height:250px;
     background-color:var(--primary);
-    border-radius: 40% 40% 0px 0px;
-    margin-top:3%;
+    margin-top:5%;
 }
 
 .footercontent h1{
@@ -786,12 +791,10 @@ footer{
     font-size:50px;
 }
 
-footer .links{
-    padding:20px;
-    width:100%;
-    margin:auto;
+footer .footerdown{
     display:flex;
     justify-content:center;
+    align-items: center;
 }
 
 footer .links a{
@@ -806,10 +809,12 @@ footer .links a:hover{
 }
 
 footer .socialiconsf{
+    flex:50%;
     display:flex;
+    flex-direction:column;
     justify-content: center;
-    gap:0.5%;
-    padding:10px;
+    align-items: center;
+    gap:10px;
 }
 
 footer .socialiconsf button{
@@ -820,6 +825,27 @@ footer .socialiconsf img{
     width:40px;
     height:auto;
     background-color:transparent;
+}
+
+footer .links{
+    padding:10px;
+    flex:50%;
+    margin:0 ;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+
+footer .links a{
+    text-decoration:none;
+    color:var(--secondary);
+    padding:10px 40px;
+    font-size:16px;
+}
+
+footer .links a:hover{
+    color:var(--alt);
 }
 
 /* the code from here applies to all the feedback */

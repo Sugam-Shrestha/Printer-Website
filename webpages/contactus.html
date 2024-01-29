@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale="1.0">
         <title>CONTACT US</title>
         <link rel="stylesheet" href="/css/style.css">
+        <script src="/javascript/index.js"></script>
         <style>
             .contact{
                 margin:auto;
@@ -37,21 +38,6 @@
                 border: 2px solid var(--light);
                 padding:10px;
                 background-color: var(--alt);
-            }
-
-            button{
-                padding:10px;
-                font-size:16px;
-                background-color:var(--alt);
-                border:2px solid var(--light);
-                border-radius:5px;
-                transition: 0.2s ease-in-out;
-            }
-
-            button:hover{
-                background-color: var(--dark);
-                color:var(--light);
-                box-shadow: 0px 0px 15px var(--dark);
             }
         </style>
     </head>
@@ -143,22 +129,22 @@
                 <div class="contactcontainer" style="width:75%; height:1000px; padding:20px; border-radius: 20px;;">
                     <div class="contactcontent" style="width:60%;">
                         <div class="form">
-                            <form name="contact_form" onsubmit="">
+                            <form onsubmit="Cformvalidate()" name="contact_form">
                                 <div class="name">
                                     <fieldset class="dualformcontent">
                                         <legend>FULL NAME</legend>
-                                            <input style="font-size:17px;" type="text" name="fname" placeholder="Enter your First Name">
-                                            <input style="font-size:17px;" type="text" name="lname" placeholder="Enter you Last Name">
+                                            <input style="font-size:17px;" type="text" name="fname"  placeholder="Enter your First Name">
+                                            <input style="font-size:17px;" type="text" name="lname"  placeholder="Enter you Last Name">
                                     </fieldset>
                                 </div>
                                 <br>
                                 <div class="email">
                                     <fieldset class="formcontent">
                                         <legend>EMAIL ADDRESS</legend>
-                                        <input style="font-size:17px;" type="text" name="email" placeholder="Enter your email address">
+                                        <input style="font-size:17px;" type="text" name="email"  placeholder="Enter your email address">
                                         <br>
                                         <br>
-                                        <input style="font-size:17px;" type="text" name="email" placeholder="Enter your alternative email address">
+                                        <input style="font-size:17px;" type="text" name="aemail"  placeholder="Enter your alternative email address (not required)">
                                     </fieldset>
                                 </div>
                                 <br>
@@ -166,14 +152,14 @@
                                     <div class="phone">
                                         <fieldset class="formcontent">
                                             <legend>PHONE NUMBER</legend>
-                                            <input style="font-size:17px;" type="text" name="number" placeholder="Enter your number">
+                                            <input style="font-size:17px;" type="text" name="number"  placeholder="Enter your number">
                                         </fieldset>
                                     </div>
                                     <div class="region">
                                         <fieldset class="formcontent">
                                             <legend>SELECT YOUR REGION</legend>
                                             <div class="dropdown">
-                                                <select style="font-size:17px;" name="region" id="region">
+                                                <select style="font-size:17px;" name="region" >
                                                     <option selected value="Kathmandu">KATHMANDU</option>
                                                     <option value="Lalitpur">LALITPUR</option>
                                                     <option value="Dolakha">DOLAKHA</option>
@@ -193,18 +179,26 @@
                                 <div class="subject">
                                     <fieldset class="formcontent">
                                         <legend>TYPE YOUR SUBJECT</legend>
-                                        <input type="text" placeholder="Input your subject">
+                                        <input type="text" name="subject" placeholder="Input your subject">
                                     </fieldset>
                                 </div>
                                 <div class="messege">
                                     <fieldset class="formcontent">
                                         <legend>TYPE YOUR MESSEGE</legend>
-                                        <textarea type="text" placeholder="Type your message here" style="width:100%; height:300px; font-size:18px;"></textarea>
+                                        <textarea type="text" name="message" placeholder="Type your message here" style="width:100%; height:300px; font-size:18px;"></textarea>
                                     </fieldset>
                                 </div>   
                                 <br>    
-                                <button style="width:40%;" onclick="submitted()">Submit</button>                    
+                                <input type="submit" value="Submit">                    
                             </form>
+                            <br>
+                            <div class="contactinfo" style="color:var(--dark); font-size:large; text-align:center;">
+                                <h3>You can reach us out by calling these numbers: </h3>
+                                <h3>+977 9865364245 OR +977 9865364246</h3>
+                                <br>
+                                <h3>Landline Numbers: </h3>
+                                <h3>+977 01-56748 OR +977 01-56749</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -213,21 +207,28 @@
         <footer>
             <div class="footercontent">
                 <div class="footerintro">
-                    <h1>
-                        PRINTER <span style="padding:10px; color:var(--secondary);">HUB</span>
-                    </h1>
-                    <div class="socialiconsf">  
-                        <button><img src="/socialicons/google.png" alt="google logo"></button>
-                        <button><img src="/socialicons/facebook.png" alt="facebook logo"></button>
-                        <button><img src="/socialicons/instagram.png" alt="instagram logo"></button>
-                        <button><img src="/socialicons/linkedin.png" alt="linkedin logo"></button>
-                        <button><img src="/socialicons/youtube.png" alt="youtube logo"></button>
-                        <button><img src="/socialicons/twitter.png" alt="twitter logo"></button>
+                    <div class="footerhead">
+                        <h1>
+                            PRINTER <span style="padding:10px; color:var(--secondary);">HUB</span>
+                        </h1>
                     </div>
-                    <div class="links">
-                        <a href="/webpages/aboutus.html">Learn more about us</a>
-                        <a href="/webpages/contactus.html">Contact us here</a>
-                        <a href="/webpages/product.html">See all our products</a>
+                    <div class="footerdown">
+                        <div class="socialiconsf">
+                            <h3>FOLLOW US ON FOR MORE ON</h3>
+                            <div class="icons">
+                                <button onclick="suscribed()"><img src="/socialicons/facebook.png" alt="facebook logo"></button>
+                                <button onclick="suscribed()"><img src="/socialicons/instagram.png" alt="instagram logo"></button>
+                                <button onclick="suscribed()"><img src="/socialicons/linkedin.png" alt="linkedin logo"></button>
+                                <button onclick="suscribed()"><img src="/socialicons/youtube.png" alt="youtube logo"></button>
+                                <button onclick="suscribed()"><img src="/socialicons/twitter.png" alt="twitter logo"></button>
+                            </div> 
+                        </div>
+                        
+                        <div class="links">
+                            <a href="/webpages/aboutus.html">Learn more about us</a>
+                            <a href="/webpages/contactus.html">Contact us here</a>
+                            <a href="/webpages/product.html">See all our products</a>
+                        </div>
                     </div>
                 </div>
             </div>
