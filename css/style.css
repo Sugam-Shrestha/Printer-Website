@@ -3,7 +3,7 @@
     margin:0px;
     padding:0px;
     box-sizing: border-box;
-    font-family:monospace;
+    font-family:;
 }
 
 /* variable declared for colours for the website */ 
@@ -25,19 +25,20 @@ html{
 
     /* code for navbar starts */
 
-/*  */
+/* 
+   In header postion:fixed; is used to make the navbar to always stay on the top
+   box-shadow is used to make the box shadow blur and inline-flex is used to make the contents inside navbar in a straight horizontal line
+ */
 
 header{
     position:fixed;
     top:0;
     width:100%;
-    box-shadow:5px 5px 3px var(--dark); 
+    box-shadow:0px 5px 3px var(--dark); 
     background-color:var(--dark);
-    overflow:hidden;
 }
 
-/* in navbar header postion:fixed; is used to make the navbar to always stay on the top
-   box-shadow is used to make the box shadow blur and 5pxinline-flex is used to make the contents inside navbar in a straight horizontal line
+/* 
     space-around is used to align the contents in navbar horizontally with space around nature.
     gap is given so that the contents have some gap between them */
 
@@ -50,15 +51,12 @@ header{
 }
 /* width of the logo is 200px*/
 
-.navbar .logo figure{
-    display:flex;
-    width:200px;
-}
+
 
 /* width of the logo is 100% that fits in the container figure */
 
-.navbar .logo figure img{
-    width:100%;
+.navbar .logo img{
+    width:200px;
     height:90px;
 }
 
@@ -84,9 +82,6 @@ transition is given 0.3 seconds so that hover animations will appear slower and 
     text-decoration:none;
     border-radius:30px;
     display:flex;
-    margin:auto;
-    align-items:center;
-    justify-content: center;
     width:90px;
     height:90px;
     padding:10px;
@@ -114,7 +109,6 @@ transition is given 0.3 seconds so that hover animations will appear slower and 
 nav.rightnav{
     display:flex;
     align-items:center;
-    
 }
 
 .rightnav ul{
@@ -126,7 +120,7 @@ nav.rightnav{
 }
 
 .rightnav .searchbox{
-    width:195px;
+    width:48%;
     display:flex;  
     border: 2px solid var(--secondary); 
     border-radius:10px;
@@ -153,8 +147,6 @@ nav.rightnav{
     border-radius:30px;
     display:flex;
     margin:auto;
-    align-items:center;
-    justify-content: center;
     width:90px;
     height:90px;
     padding:10px;
@@ -177,13 +169,8 @@ nav.rightnav{
     flex-direction:column;
 }
 
-figure.link{
-    display:flex;
-    width:30px;
-}
-
 figure.link img{
-    width:100%;
+    width:30px;
 }
 
 nav ul a.current{
@@ -200,7 +187,7 @@ main{
     display:flex;
     width:90%;
     margin:auto;
-    margin-top:100px;
+    margin-top:130px;
 }
 
 .productcontent{
@@ -380,7 +367,6 @@ main{
 
 .prodnav a:hover{
     color:var(--dark);
-    text-decoration:underline;
     background-color:var(--secondary);
 }
 

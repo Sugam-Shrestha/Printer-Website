@@ -6,15 +6,26 @@
         <meta name="viewport" content="width=device-width, initial-scale="1.0">
         <title>PRODUCT DETAILS</title>
         <link rel="stylesheet" href="/css/style.css">
-        <link rel="shortcut icon" href="/images/">
+        <link rel="shortcut icon" href="/images/product.png">
         <script src="/javascript/index.js"></script>
         <style>
-            
+            .leftimgs{
+                width:150px;
+                display:flex;
+                flex-direction:column;
+                gap:200px;
+                border-radius:10px;
+            }
+            #mainimgs img{
+                width:100%;
+                height: 650px;
+                border-radius:20px;
+            }
         </style>
     </head>
     <body>
         <header>
-            <div class="navbar" style="width:100%; height:100px;">
+            <div class="navbar">
                 <div class="logo">
                     <a href="/index.html">
                     <figure>
@@ -96,7 +107,138 @@
             </div>
         </header>
         <main>
-            
+            <div class="proddetail" style="display:flex; width:80%; margin:auto; flex-direction:column;">
+                <div class="proddet" style="display:flex; width:90%; margin:auto; justify-content: space-around;">
+                    <div class="images" style="display:flex; gap:50px;">
+                        <div class="leftbarimgs">
+                            <img class="leftimgs" src="/printerimages/printer1.jpeg">
+                            <img class="leftimgs" src="/printerimages/printer2.jpeg">
+                            <img class="leftimgs" src="/printerimages/printer3.jpeg">
+                            <img class="leftimgs" src="/printerimages/printer4.jpeg">
+                        </div>
+                        <div id="mainimgs" style="display:flex; justify-content: center;">
+                            <img src="/printerimages/printer1.jpeg">
+                        </div>
+                    </div>
+                    <div class="proddets">
+                        <h1 style="color:var(--light);">
+                            Product Name
+                        </h1>
+                    </div>
+                </div>
+                <div class="relprod">
+                    <div class="productcontainer">
+                        <div class="productitem">
+                            <h1>
+                                Brother MFC-J995DW
+                            </h1>
+                            <figure class="prodimg">
+                                <img src="/printerimages/img 1.png" alt="">
+                            </figure>
+                            <div class="description">
+                                <p class="desc">
+                                    <ul>
+                                        <li>Print up to 27ppm</li>
+                                        <li>2.7" touchscreen display</li>
+                                        <li>Gigabit Ethernet and dual band wireless networking</li>
+                                    </ul>
+                                </p>
+                                <div class="price">
+                                    <p>Rs.45000</p>
+                                </div>
+                            </div>
+                            <div class="buy-more">
+                                <div class="buy">
+                                    <a id="buy">
+                                        <div class="button">
+                                            <p>BUY</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="more">
+                                    <a href="/webpages/product-details.html">
+                                        <div>
+                                            <p>SEE MORE</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productitem">
+                            <h1>
+                                Epson Rixma TR8620
+                            </h1>
+                            <figure class="prodimg">
+                                <img src="/printerimages/img 2.png" alt="">
+                            </figure>
+                            <div class="description">
+                                <p class="desc">
+                                    <ul>
+                                        <li>Print up to 27ppm</li>
+                                        <li>2.7" touchscreen display</li>
+                                        <li>Gigabit Ethernet and dual band wireless networking</li>
+                                    </ul>
+                                </p>
+                                <div class="price">
+                                    <p>Rs.45000</p>
+                                </div>
+                            </div>
+                            <div class="buy-more">
+                                <div class="buy">
+                                    <a href="#">
+                                        <div class="button">
+                                            <p>BUY</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="more">
+                                    <a href="/webpages/product-details.html">
+                                        <div>
+                                            <p>SEE MORE</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productitem">
+                            <h1>
+                                Brother HL-L2390DW
+                            </h1>
+                            <figure class="prodimg">
+                                <img src="/printerimages/img 3.png" alt="">
+                            </figure>
+                            <div class="description">
+                                <p class="desc">
+                                    <ul>
+                                        <li>Print up to 27ppm</li>
+                                        <li>2.7" touchscreen display</li>
+                                        <li>Gigabit Ethernet and dual band wireless networking</li>
+                                    </ul>
+                                </p>
+                                <div class="price">
+                                    <p>Rs.45000</p>
+                                </div>
+                            </div>
+                            <div class="buy-more">
+                                <div class="buy">
+                                    <a href="#">
+                                        <div class="button">
+                                            <p>BUY</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="more">
+                                    <a href="/webpages/product-details.html">
+                                        <div>
+                                            <p>SEE MORE</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
         <footer>
             <div class="footercontent">
@@ -127,5 +269,28 @@
                 </div>
             </div>
         </footer>
+<script>
+    var images = ['/printerimages/printer2.jpeg', '/printerimages/printer3.jpeg', '/printerimages/printer4.jpeg', '/printerimages/printer1.jpeg'];
+
+var x = 0;
+var imgs = document.getElementById('mainimgs');
+setInterval(slider, 3000);
+
+function slider() {
+
+    if (x < images.length) 
+    {
+        x = x + 1;
+    } 
+
+    else 
+    {
+    x = 1;
+    }
+
+
+    imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+}
+</script>
     </body>
 </html>
