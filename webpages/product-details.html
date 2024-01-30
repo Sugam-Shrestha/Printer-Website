@@ -264,12 +264,9 @@
             </div>
         </main>
         <div class="popup" style="visibility:hidden; opacity:0; padding:50px 60px; background-color: white; border-radius:10px; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); ">
-            <h1>your order is placed</h1>
+            <h1>CONFIRM YOUR ORDER?</h1>
             <div class="ok" style="display: flex; justify-content: center; align-items: center;">
                 <a class="okay">OK</a>
-            </div>
-            <div class="close" style="display: flex; justify-content: center; align-items: center;">
-                <a href="close">CLOSE</a>
             </div>
         </div>
         <footer>
@@ -301,86 +298,81 @@
                 </div>
             </div>
         </footer>
-<script>
-var images = ["/printerimages/printer2.jpeg", "/printerimages/printer3.jpeg", "/printerimages/printer4.jpeg", "/printerimages/printer1.jpeg"];
-
-var x = 0;
-var imgs = document.querySelector('mainimgs');
-setInterval(slider, 4000);
-
-function slider() {
-
-    var mainImage = document.querySelector(".mainimage");
-    var IMG1 = document.querySelector(".image1");
-    var IMG2 = document.querySelector(".image2");
-    var IMG3 = document.querySelector(".image3");
-    var IMG4 = document.querySelector(".image4");
-
-    IMG1.addEventListener("click",function(){
-        mainImage.src = images[3];
-    })
-    IMG2.addEventListener("click",function(){
-        mainImage.src = images[0];
-    })
-    IMG3.addEventListener("click",function(){
-        mainImage.src = images[1];
-    })
-    IMG4.addEventListener("click",function(){
-        mainImage.src = images[2];
-    })
-
-    if (x < images.length) 
-    {
-        x = x + 1;
-    } 
-
-    else 
-    {
-    x = 1;
-    }
-
-    mainImage.src = images[x - 1];
-}
-
-const seemorebtn = document.querySelector(".seemore");
-const seemorecontent = document.querySelector(".smore");
-
-seemorebtn.addEventListener("click",function(){
-    if(seemorecontent.style.display == "none"){
-        seemorebtn.innerHTML="SEE LESS";
-        seemorecontent.style.display="block";
-    }
-    else{
-        seemorecontent.style.display="none";
-        seemorebtn.innerHTML="SEE MORE";
-    }
-
-})
-
-const pop = document.querySelector(".popup");
-const BUY = document.querySelector(".buy");
-const okaybtn = document.querySelector(".ok");
-const mainee = document.querySelector("main");
-const foot = document.querySelector(".footercontent");
-
-
-BUY.addEventListener("click",function(){
-    pop.style.visibility = "visible";
-    pop.style.opacity = 1;
-    mainee.style.filter = "blur(10px)";
-    foot.style.filter = "blur(10px)";
-
-});
-
-okaybtn.addEventListener("click",function(){
-    pop.style.visibility = "hidden";
-    pop.style.opacity = 0;
-    mainee.style.filter = "blur(0px)";
-    foot.style.filter = "blur(0px)";
-
-})
-
-
-</script>
     </body>
+    <script>
+        var images = ["../printerimages/printer2.jpeg", "../printerimages/printer3.jpeg", "../printerimages/printer4.jpeg", "../printerimages/printer1.jpeg"];
+        
+        var x = 0;
+        var imgs = document.querySelector('mainimgs');
+        setInterval(slider, 4000);
+        
+        function slider() {
+        
+            var mainImage = document.querySelector(".mainimage");
+            var IMG1 = document.querySelector(".image1");
+            var IMG2 = document.querySelector(".image2");
+            var IMG3 = document.querySelector(".image3");
+            var IMG4 = document.querySelector(".image4");
+        
+            IMG1.addEventListener("click",function(){
+                mainImage.src = images[3];
+            })
+            IMG2.addEventListener("click",function(){
+                mainImage.src = images[0];
+            })
+            IMG3.addEventListener("click",function(){
+                mainImage.src = images[1];
+            })
+            IMG4.addEventListener("click",function(){
+                mainImage.src = images[2];
+            })
+        
+            if (x < images.length) 
+            {
+                x = x + 1;
+            } 
+        
+            else 
+            {
+            x = 1;
+            }
+        
+            mainImage.src = images[x - 1];
+        }
+        
+        var seemorebtn = document.querySelector(".seemore");
+        var seemorecontent = document.querySelector(".smore");
+        
+        seemorebtn.addEventListener("click",function(){
+            if(seemorecontent.style.display == "none"){
+                seemorebtn.innerHTML="SEE LESS";
+                seemorecontent.style.display="block";
+            }
+            else{
+                seemorecontent.style.display="none";
+                seemorebtn.innerHTML="SEE MORE";
+            }
+        
+        })
+        
+        var pop = document.querySelector(".popup");
+        var BUY = document.querySelector(".buy");
+        var okaybtn = document.querySelector(".ok");
+        var mainee = document.querySelector("main");
+        var foot = document.querySelector(".footercontent");
+        
+        BUY.addEventListener("click", function () {
+            pop.style.visibility = "visible";
+            pop.style.opacity = 1;
+            mainee.style.filter = "blur(10px)";
+            foot.style.filter = "blur(10px)";
+        });
+        
+        okaybtn.addEventListener("click", function () {
+            pop.style.visibility = "hidden";
+            pop.style.opacity = 1;
+            mainee.style.filter = "blur(0px)";
+            foot.style.filter = "blur(0px)";
+        });
+    </script>
 </html>
