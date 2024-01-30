@@ -1,13 +1,22 @@
 <!DOCTYPE html>
+<!-- This is a home page. It consists of all the short description of all the pages. language is set to english. -->
 <html lang="en">
     <head>
         <meta name="author" content="Sugam Shrestha">
+        <meta name="author" content="Anurup Kharel">
+        <meta name="author" content="Prajol Bimali">
+        <meta name="author" content="Priyanshu Bishowkarma">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale="1.0">
+        <!-- This is the title of the page -->
         <title>HOME</title>
+        <!-- Linking css to this webpage -->
         <link rel="stylesheet" href="./css/style.css">
+        <!-- shortcut icon for for the tab on the top of the browsers -->
         <link rel="shortcut icon" href="./images/home.png">
+        <!-- linking javascript to this webpage -->
         <script src="./javascript/index.js"></script>
+        <!-- Internal style css for the webpage -->
         <style>
             main .intro{
                 display:flex;
@@ -89,6 +98,7 @@
                 border-left:2px solid var(--secondary);
                 border-bottom:2px solid var(--secondary);
                 border-radius: 5px;
+                font-size:18px;
             }
 
             .user img{
@@ -124,9 +134,12 @@
             }
 
         </style>
+        <!-- Internal style css ends for the webpage. -->
     </head>
     <body>
+        <!-- The code for header starts from here -->
         <header>
+            <!-- The code for navbar starts from here. It comprises of the logos, pages links and search bar. -->
             <div class="navbar">
                 <div class="logo">
                     <a href="./index.html">
@@ -135,6 +148,7 @@
                     </figure>
                     </a>
                 </div>
+                <!-- This is the code for the center part of the navbar. It consists of links such as home, blog, product, research and aboutus. -->
                 <nav class="centernav">
                     <ul>
                         <a href="./index.html" class="current">
@@ -179,6 +193,9 @@
                         </a>
                     </ul>
                 </nav>
+                <!-- The code for the center part of the navbar ends. -->
+
+                <!-- This is the code for the right part of the navbar. It consists of links such as contact and login. It also holds the search bar. -->
                 <nav class="rightnav">
                     <ul>
                         <div class="searchbox">
@@ -206,10 +223,14 @@
                         
                     </ul>
                 </nav>
+                <!-- The code for the right part of the navbar ends. -->
             </div>
+            <!-- The code for the navbar ends. -->
         </header>
+        <!-- The code for the content of the page starts here. It comprises of the banners, and short descriptions of all the other pages. -->
         <main class="maincontent" style="display:flex; justify-content:center;">
             <div class="maincontent-container" style="width:100%;">
+                <!-- This is a code for banner made form html and css. -->
                 <div class="intro" style="width:100%;">
                     <div class="introduce">
                         <h1 style="padding-left: 10px; font-size:50px;">
@@ -223,12 +244,17 @@
                         <img style="width:100%;" src="./images/printer.png" alt="image of printer">
                     </div>
                 </div>
+                <!-- The code for the banner made from html and css ends here. -->
+                <!-- The code for the image banner starts here. It comprises of the image banner. -->
                 <div class="banner" style="width:90%; margin:auto; border-radius:0px;">
                     <img style="width:100%; height:45vh; border-radius:20px;" src="./printerimages/Printerbanner1.jpg" alt="printer banner">
                 </div>
+                <!-- The code for the image banner ends here. -->
+                <!-- This is a container for all the description of the other webpages. -->
                 <div class="allcontent" style="display:flex; flex-direction:column; width:90%; margin:auto;">
+                    <!-- The code for short description of the blog page starts from here. -->
                     <div class="blog" style="display:flex; border: 2px solid var(--light); flex-direction: column; width:90%; margin: 25px auto; padding:40px; border-radius:20px; box-shadow:0px 0px 20px var(--light);">
-                        <div class="IT">   
+                        <div class="IT">
                             <h1>INTERNET TECHNOLOGIES</h1>
                             <P>Internet technology is the backbone of our interconnected world, enabling the seamless exchange of information and services across the globe.  Internet technology encompasses a diverse range of services, including email, social media, online commerce, and streaming, profoundly influencing communication, business, and daily life. As technology continues to advance, the internet remains a dynamic force, driving innovation, collaboration, and connectivity across the globe. You can learn more about this topic at <a href="./webpages/blog-details.html">HERE.</a></P>
                         </div>
@@ -238,6 +264,8 @@
                             <p>The history of printers traces its roots to early methods like woodcut printing were practiced in East Asia and Europe, but Gutenberg's press allowed for mass production and dissemination of books. Over centuries, printing technology evolved from letterpress printing in the 19th century to the widespread use of offset printing in the 20th century. The 21st century brought advancements marking a dynamic history of printers that has profoundly impacted communication, publishing, and manufacturing.You can learn more about this topic at <a href="./webpages/evolutionprinter.html">HERE.</a></p>
                         </div>
                     </div>
+                    <!-- The short description of the blog page ends here. -->
+                    <!-- The small part of the product page starts here. -->
                     <div class="product" style="width:90%; margin:auto; padding:10px; margin:20px auto;border-radius:30px;">
                         <div class="featured">
                             <figure class="feature" style="width:25px;">
@@ -245,6 +273,7 @@
                             </figure>
                             <h1 style="text-align:center; font-size:23px;">FEATURED</h1>
                         </div>
+                        <!-- product container where all the porducts are kept. -->
                         <div class="productcontainer">
                             <div class="productitem">
                                 <h1>
@@ -355,13 +384,18 @@
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
+                    <!-- The short description of the product page ends here. -->
+                    <!-- Short description for the page research starts here. -->
                     <div class="research" style="display:flex; border: 2px solid var(--light); flex-direction: column; width:90%; margin: 25px auto; padding:40px; border-radius:20px; box-shadow:0px 0px 20px var(--light);">
-                        <h2 style="color:var(--primary);">The research page comprises of comparision and similarities between the webpages of this website and the webpages of other various websites. These can be found on the <a href="./webpages/research.html">Research page</a> of this website.</h2>
+                        <h2 style="color:var(--primary);">The research page comprises of comparison between similarities and differences of the webpages of this website and the webpages of other various websites. These similarities and differences can be found on the <a href="./webpages/research.html">Research page</a> of this website.</h2>
                     </div>
+                    <!-- Short description for the page research ends here. -->
+                    <!-- Short description for the page about starts here. -->
                     <div class="about" style="width:90%; margin:auto; padding:10px; margin:20px auto;border-radius:30px; border:2px solid var(--light); box-shadow: 0px 0px 10px var(--light);"> 
                         <h1 align="center" style="color:var(--light); border-bottom:2px solid var(--light);border-radius:10px;">ABOUT OUR TEAM</h1>
-                        <div class="row" style="display:flex; padding:10px; width:90%; margin:auto; justify-content: space-between; color:var(--light);">
+                        <div class="row" style="display:flex; padding:10px; width:95%; margin:auto; justify-content: space-between; color:var(--light);">
                             <div class="person">
                                 <div class="user">
                                     <img src="./images/anurup.jpg" alt="">
@@ -400,13 +434,20 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Short description for the about page ends here. -->
+                    <!-- Short description for the other webpages such as login, signup and contact starts here. -->
                     <div class="others" style="display:flex; border: 2px solid var(--light); flex-direction: column; width:90%; margin: 25px auto; padding:40px; border-radius:20px; box-shadow:0px 0px 20px var(--light);">
-                        <h2 style="color:var(--primary);">You can contact us through various methods such as <a href="./webpages/contactus.html">EMAIL FORM</a> and with the nubmers below: <br>
-                        1. </h2>
+                        <h2 style="color:var(--primary);">You can contact us through various methods such as <a href="./webpages/contactus.html">EMAIL FORM</a> or with the nubmers below: <br>
+                        +977-9865364245 OR +977 9865364246 <br>
+                        </h2>
+                        <h2 style="color:var(--primary);">Join us by <a href="./webpages/signup.html">signing up</a> or <a href="./webpages/login.html">logging in</a> with you account.  
+                        </h2>
                     </div>
+                    <!-- short description for the other pages ends here. -->
                 </div>
             </div>
         </main>
+        <!-- Footer starts here. This comprises of the quick links, website name. -->
         <footer>
             <div class="footercontent">
                 <div class="footerintro">
@@ -426,7 +467,12 @@
                                 <button onclick="suscribed()"><img src="./socialicons/twitter.png" alt="twitter logo"></button>
                             </div> 
                         </div>
-                        
+                        <div class="links">
+                            <h2 class="footter"> &copy; PRINTER HUB, Terms and conditions</h2>. 
+                            <a href="./webpages/login.html">Login to our page</a>
+                            <a href="./webpages/signup.html">Create an account</a>
+                            <a href="./webpages/aboutus.html">Learn About us</a>
+                        </div>
                         <div class="links">
                             <a href="./webpages/aboutus.html">Learn more about us</a>
                             <a href="./webpages/contactus.html">Contact us here</a>
@@ -436,5 +482,6 @@
                 </div>
             </div>
         </footer>
+        <!-- footer ends here -->
     </body>
 </html>
