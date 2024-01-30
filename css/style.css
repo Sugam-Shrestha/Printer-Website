@@ -861,7 +861,7 @@ input[type="Submit"], button {
     color: var(--light);
 }
 input[type="Submit"] {
-    color: var(--light);
+    color: var(--dark);
     background-color: var(--primary);
 }
 .btn {

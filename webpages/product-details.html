@@ -358,19 +358,20 @@ seemorebtn.addEventListener("click",function(){
 })
 
 const pop = document.querySelector(".popup");
-const BUYS = document.querySelectorAll(".buy");
+const BUY = document.querySelector(".buy");
 const okaybtn = document.querySelector(".ok");
 const mainee = document.querySelector("main");
 const foot = document.querySelector(".footercontent");
 
-BUYS.forEach(BUY => {
-    BUY.addEventListener("click",function(){
-        pop.style.visibility = "visible";
-        pop.style.opacity = 1;
-        mainee.style.filter = "blur(10px)";
-        foot.style.filter = "blur(10px)";
-    })
+
+BUY.addEventListener("click",function(){
+    pop.style.visibility = "visible";
+    pop.style.opacity = 1;
+    mainee.style.filter = "blur(10px)";
+    foot.style.filter = "blur(10px)";
+
 });
+
 okaybtn.addEventListener("click",function(){
     pop.style.visibility = "hidden";
     pop.style.opacity = 0;
