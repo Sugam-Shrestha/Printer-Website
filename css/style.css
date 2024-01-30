@@ -464,7 +464,7 @@ only */
 .entry-header-dash {
     background-color: var(--primary);
     width: 60px; height: 8px;
-    margin-left: 60px;
+    margin-left: 160px;
 }
 .list-header-dash {
     background-color: var(--primary);
@@ -475,8 +475,9 @@ only */
 
 .blog-quote {
     color: var(--alt);
-    font-size: 14px;
+    font-size: 10px;
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 10px;
 }
 
@@ -484,7 +485,8 @@ only */
     color: var(--alt);
     text-align: center;
     margin-bottom: 15px;
-    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
 }
 
 .points-title {
