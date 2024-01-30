@@ -25,16 +25,46 @@
             .okay{
                 padding:10px 15px; 
                 border-radius: 10px; 
-                background-color:black; color:white; 
+                background-color:var(--secondary); 
+                border:2px solid var(--alt);
+                color:var(--dark); 
                 display:inline-block;
             }
             .okay:hover{
                 cursor: pointer;
-                background-color: green;
+                background-color: var(--dark);
+                border:2px solid var(--secondary);
+                color:var(--light);
+                box-shadow: 0px 0px 10px var(--dark);  
+            }
+            .buy{
+                font-size:12px;
+                margin:5px;
+                padding:10px 20px;
+                border:2px solid var(--primary);
+                border-radius:20px;
             }
             .buy:hover{
                 cursor: pointer;
+                color:var(--light);
+                background-color: var(--primary);
+                border:2px solid var(--alt);
+                box-shadow: 0px 0px 10px var(--light); 
             }
+            button.seemore{
+                font-size:10px;
+                margin:5px;
+                padding:10px 20px;
+                border:2px solid var(--light);
+                border-radius:20px;
+            }
+            button.seemore:hover{
+                cursor: pointer;
+                color:var(--dark);
+                background-color: var(--secondary);
+                box-shadow: 0px 0px 10px var(--light);   
+            }
+
         </style>
     </head>
     <body>
@@ -149,8 +179,8 @@
                         </h1>
                         <br>
                         <br>
-                        <h3 style="color:var(--secondary);">
-                            Model Name:G2020 <br><br>
+                        <h2 style="color:var(--secondary);">
+                            Model Name:INKvestment MFC-J995DW <br><br>
                             Printer Output: Color and B/W <br>
                             Functionality: Print, Scan, Copy <br>
                             Print Speed: 9.1 ipm (Black), 5.0 ipm (Colour) - images per minute <br>
@@ -161,19 +191,22 @@
                                 Ink Bottle Included: GI-71 PGBK (Black), GI-71 C (Cyan), GI-71 M (Magenta), GI-71 Y (Yellow) <br>
                                 Page Yield: GI-71 PGBK : 6,000 pages, GI-71 C / M / Y : 7,700 pages - As Per ISO Standards <br>
                                 Built-in 5.08cm LCD Display <br>
-                                Replaceable Maintenance Cartridge: MC-G02 <br>
+                                Replaceable Maintenance Cartridge: MFC-J995DW <br>
                                 Borderless Printing Top/Bottom/Left/Right Margin: each 0 mm <br>
                                 Printer Type: Ink Tank <br>
-                                Manufacturer: Canon <Inc class="br"></Inc> <br>
+                                Manufacturer: Brother Inc. <br>
                             </div>
 
-                            <button class="seemore">see more</button>
-                            <div class="buy">
-                                <a>
-                                    <p>BUY</p>
-                                </a>
+                            <div class="butons" style="display:flex;">
+                                <button class="seemore">VIEW MORE DETAILS</button>
+                                <div class="buy">
+                                    <a>
+                                        <p>BUY</p>
+                                    </a>
+                                </div>
                             </div>
-                        </h3>
+
+                        </h2>
                     </div>
                 </div>
                 <div class="relprod">
@@ -200,7 +233,7 @@
                             <div class="more">
                                 <a href="../webpages/product-details.html">
                                     <div>
-                                        <p>SEE MORE</p>
+                                        <p>SEE MORE  ABOUT THE PRODUCT</p>
                                     </div>
                                 </a>
                             </div>
@@ -227,7 +260,7 @@
                             <div class="more">
                                 <a href="../webpages/product-details.html">
                                     <div>
-                                        <p>SEE MORE</p>
+                                        <p>SEE MORE  ABOUT THE PRODUCT</p>
                                     </div>
                                 </a>
                             </div>
@@ -254,7 +287,7 @@
                             <div class="more">
                                 <a href="../webpages/product-details.html">
                                     <div>
-                                        <p>SEE MORE</p>
+                                        <p>SEE MORE ABOUT THE PRODUCT</p>
                                     </div>
                                 </a>
                             </div>
@@ -263,8 +296,8 @@
                 </div>
             </div>
         </main>
-        <div class="popup" style="visibility:hidden; opacity:0; padding:50px 60px; background-color: white; border-radius:10px; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); ">
-            <h1>CONFIRM YOUR ORDER?</h1>
+        <div class="popup" style="visibility:hidden; opacity:0; padding:50px 60px; background-color:var(--primary); border-radius:10px; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); ">
+            <h1>THANKYOU FOR CONFIRMING YOUR ORDER.</h1>
             <div class="ok" style="display: flex; justify-content: center; align-items: center;">
                 <a class="okay">OK</a>
             </div>
@@ -345,12 +378,12 @@
         
         seemorebtn.addEventListener("click",function(){
             if(seemorecontent.style.display == "none"){
-                seemorebtn.innerHTML="SEE LESS";
+                seemorebtn.innerHTML="VIEW LESS DETAILS";
                 seemorecontent.style.display="block";
             }
             else{
                 seemorecontent.style.display="none";
-                seemorebtn.innerHTML="SEE MORE";
+                seemorebtn.innerHTML="VIEW MORE DETAILS";
             }
         
         })
