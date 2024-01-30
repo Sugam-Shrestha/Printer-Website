@@ -663,8 +663,7 @@ only */
     flex:50%;
 }
 
-.form .role .dropdown                                                                                                                   
-{
+.form .role .dropdown{
     width:100%;
 }
 
@@ -832,6 +831,8 @@ footer .links a:hover{
 
 /* the code from here applies to all the feedback */
 
+/* The code from here applies to the comment box of the blog pages */
+
 .comment-container {
     height: 170px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -885,6 +886,8 @@ input[type="Submit"] {
 .btn {
     display: none;
 }
+
+/* the code till here applies to the comment box */
 
 
 
