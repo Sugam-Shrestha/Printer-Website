@@ -161,7 +161,6 @@ nav.rightnav{
 .rightnav a:hover{
     background-color:var(--primary);
     color:var(--secondary);
-    text-decoration:underline;
 }
 
 .rightnav li{
