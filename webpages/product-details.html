@@ -5,21 +5,35 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale="1.0">
         <title>PRODUCT DETAILS</title>
-        <link rel="stylesheet" href="/css/style.css">
-        <link rel="shortcut icon" href="/images/product.png">
-        <script src="/javascript/index.js"></script>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="shortcut icon" href="../images/product.png">
+        <script src="../javascript/index.js"></script>
         <style>
-            .leftimgs{
-                width:150px;
-                display:flex;
-                flex-direction:column;
-                gap:200px;
+            #leftimgs{
+                width:100px;
                 border-radius:10px;
+                border:1px solid var(--secondary);
             }
-            #mainimgs img{
-                width:100%;
-                height: 650px;
-                border-radius:20px;
+            .mainimgs img{
+                width:500px; 
+                border-radius:10px;
+                border:3px solid var(--alt);
+            }
+            .mainimage{
+                transition:0.5 all ease-in-out;
+            }
+            .okay{
+                padding:10px 15px; 
+                border-radius: 10px; 
+                background-color:black; color:white; 
+                display:inline-block;
+            }
+            .okay:hover{
+                cursor: pointer;
+                background-color: green;
+            }
+            .buy:hover{
+                cursor: pointer;
             }
         </style>
     </head>
@@ -27,7 +41,7 @@
         <header>
             <div class="navbar">
                 <div class="logo">
-                    <a href="/index.html">
+                    <a href="../index.html">
                     <figure>
                     <img src="../images/logo.png" alt="logo">
                     </figure>
@@ -35,7 +49,7 @@
                 </div>
                 <nav class="centernav">
                     <ul>
-                        <a href="/index.html">
+                        <a href="../index.html" >
                             <li>
                                 <figure class="link">
                                     <img src="../images/home.png">
@@ -43,7 +57,7 @@
                                 HOME
                             </li>
                         </a>
-                        <a href="/webpages/blog.html">
+                        <a href="../webpages/blog.html">
                             <li>
                                 <figure class="link">
                                     <img src="../images/blog.png">
@@ -51,7 +65,7 @@
                                 BLOG
                             </li>
                         </a>
-                        <a href="/webpages/product.html"  class="current">                          
+                        <a href="../webpages/product.html" class="current">                          
                             <li>
                                 <figure class="link">
                                     <img src="../images/product.png">
@@ -59,7 +73,7 @@
                                 PRODUCTS
                             </li>
                         </a>
-                        <a href="/webpages/research.html">
+                        <a href="../webpages/research.html">
                             <li>
                                 <figure class="link">
                                     <img src="../images/research.png">
@@ -67,7 +81,7 @@
                                 RESEARCH
                             </li>
                         </a>
-                        <a href="/webpages/aboutus.html">
+                        <a href="../webpages/aboutus.html">
                             <li>
                                 <figure class="link">
                                     <img src="../images/about.png">
@@ -82,48 +96,84 @@
                         <div class="searchbox">
                             <input type="text" placeholder="SEARCH">
                             <figure class="searchlogo">
-                                <img src="/images/search.png" alt="searchlogo">
+                                <img src="../images/search.png" alt="searchlogo">
                             </figure>
                         </div>
-                        <a href="/webpages/contactus.html">
-                            <li>
+                        <a href="../webpages/contactus.html">
+                            <li>                            
                                 <figure class="link">
                                     <img src="../images/contact.png">
                                 </figure>
                                 CONTACT
                             </li>
                         </a>
-                        <a href="/webpages/login.html">
-                            <li>
-                            
+                        <a href="../webpages/login.html">
+                            <li>                       
                                 <figure class="link">
                                     <img src="../images/login.png">
                                 </figure>
                                 LOGIN
                             </li>
                         </a>
+                        
                     </ul>
                 </nav>
             </div>
         </header>
-        <main>
-            <div class="proddetail" style="display:flex; width:80%; margin:auto; flex-direction:column;">
-                <div class="proddet" style="display:flex; width:90%; margin:auto; justify-content: space-around;">
-                    <div class="images" style="display:flex; gap:50px;">
-                        <div class="leftbarimgs">
-                            <img class="leftimgs" src="/printerimages/printer1.jpeg">
-                            <img class="leftimgs" src="/printerimages/printer2.jpeg">
-                            <img class="leftimgs" src="/printerimages/printer3.jpeg">
-                            <img class="leftimgs" src="/printerimages/printer4.jpeg">
+        <main style="margin-top:130px; position:relative">
+            <div class="proddetail" style="display:flex; flex-direction:column; width:90%; margin:auto; gap:50px;">
+                <div class="proddet" style="display:flex; width:90%; margin:auto; justify-content: space-around; gap:40px;">
+                    <div class="images" style="flex:40%; display:flex;">
+                        <div class="leftbarimgs" style="width:140px; display:flex; flex-direction:column; align-items:center; justify-content: center; gap:25px;">
+                            <div class="image1">
+                                <img  id="leftimgs" src="../printerimages/printer1.jpeg">
+                            </div>
+                            <div class="image2">
+                                <img  id="leftimgs" src="../printerimages/printer2.jpeg">
+                            </div>
+                            <div class="image3">
+                                <img  id="leftimgs" src="../printerimages/printer3.jpeg">
+                            </div>
+                            <div class="image4">
+                                <img  id="leftimgs" src="../printerimages/printer4.jpeg">
+                            </div>
                         </div>
-                        <div id="mainimgs" style="display:flex; justify-content: center;">
-                            <img src="/printerimages/printer1.jpeg">
+                        <div class="mainimgs">
+                            <img class="mainimage" src="../printerimages/printer1.jpeg">
                         </div>
                     </div>
-                    <div class="proddets">
+                    <div id="proddets" class="proddets" style="flex:50%;">
+                        <br>
                         <h1 style="color:var(--light);">
-                            Product Name
+                            Brother INKvestment MFC-J995DW 2
                         </h1>
+                        <br>
+                        <br>
+                        <h3 style="color:var(--secondary);">
+                            Model Name:G2020 <br><br>
+                            Printer Output: Color and B/W <br>
+                            Functionality: Print, Scan, Copy <br>
+                            Print Speed: 9.1 ipm (Black), 5.0 ipm (Colour) - images per minute <br>
+                            Print resolution: 4800 x 1200 dpi; Scan Resolution: 600 x 1200 dpi <br>
+                            Connectivity: High-speed USB 2.0 <br>
+                            System Requirement: Windows 10 / 8.1 / 7 SP1, Mac OS 10.12.6 ~ 10.15 <br>
+                            <div class="smore" style="display:none;">
+                                Ink Bottle Included: GI-71 PGBK (Black), GI-71 C (Cyan), GI-71 M (Magenta), GI-71 Y (Yellow) <br>
+                                Page Yield: GI-71 PGBK : 6,000 pages, GI-71 C / M / Y : 7,700 pages - As Per ISO Standards <br>
+                                Built-in 5.08cm LCD Display <br>
+                                Replaceable Maintenance Cartridge: MC-G02 <br>
+                                Borderless Printing Top/Bottom/Left/Right Margin: each 0 mm <br>
+                                Printer Type: Ink Tank <br>
+                                Manufacturer: Canon <Inc class="br"></Inc> <br>
+                            </div>
+
+                            <button class="seemore">see more</button>
+                            <div class="buy">
+                                <a>
+                                    <p>BUY</p>
+                                </a>
+                            </div>
+                        </h3>
                     </div>
                 </div>
                 <div class="relprod">
@@ -147,21 +197,12 @@
                                     <p>Rs.45000</p>
                                 </div>
                             </div>
-                            <div class="buy-more">
-                                <div class="buy">
-                                    <a id="buy">
-                                        <div class="button">
-                                            <p>BUY</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="more">
-                                    <a href="/webpages/product-details.html">
-                                        <div>
-                                            <p>SEE MORE</p>
-                                        </div>
-                                    </a>
-                                </div>
+                            <div class="more">
+                                <a href="../webpages/product-details.html">
+                                    <div>
+                                        <p>SEE MORE</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="productitem">
@@ -183,21 +224,12 @@
                                     <p>Rs.45000</p>
                                 </div>
                             </div>
-                            <div class="buy-more">
-                                <div class="buy">
-                                    <a href="#">
-                                        <div class="button">
-                                            <p>BUY</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="more">
-                                    <a href="/webpages/product-details.html">
-                                        <div>
-                                            <p>SEE MORE</p>
-                                        </div>
-                                    </a>
-                                </div>
+                            <div class="more">
+                                <a href="../webpages/product-details.html">
+                                    <div>
+                                        <p>SEE MORE</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="productitem">
@@ -219,27 +251,27 @@
                                     <p>Rs.45000</p>
                                 </div>
                             </div>
-                            <div class="buy-more">
-                                <div class="buy">
-                                    <a href="#">
-                                        <div class="button">
-                                            <p>BUY</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="more">
-                                    <a href="/webpages/product-details.html">
-                                        <div>
-                                            <p>SEE MORE</p>
-                                        </div>
-                                    </a>
-                                </div>
+                            <div class="more">
+                                <a href="../webpages/product-details.html">
+                                    <div>
+                                        <p>SEE MORE</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
+        <div class="popup" style="visibility:hidden; opacity:0; padding:50px 60px; background-color: white; border-radius:10px; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); ">
+            <h1>your order is placed</h1>
+            <div class="ok" style="display: flex; justify-content: center; align-items: center;">
+                <a class="okay">OK</a>
+            </div>
+            <div class="close" style="display: flex; justify-content: center; align-items: center;">
+                <a href="close">CLOSE</a>
+            </div>
+        </div>
         <footer>
             <div class="footercontent">
                 <div class="footerintro">
@@ -252,31 +284,50 @@
                         <div class="socialiconsf">
                             <h3>FOLLOW US ON FOR MORE ON</h3>
                             <div class="icons">
-                                <button onclick="suscribed()"><img src="/socialicons/facebook.png" alt="facebook logo"></button>
-                                <button onclick="suscribed()"><img src="/socialicons/instagram.png" alt="instagram logo"></button>
-                                <button onclick="suscribed()"><img src="/socialicons/linkedin.png" alt="linkedin logo"></button>
-                                <button onclick="suscribed()"><img src="/socialicons/youtube.png" alt="youtube logo"></button>
-                                <button onclick="suscribed()"><img src="/socialicons/twitter.png" alt="twitter logo"></button>
+                                <button onclick="suscribed()"><img src="../socialicons/facebook.png" alt="facebook logo"></button>
+                                <button onclick="suscribed()"><img src="../socialicons/instagram.png" alt="instagram logo"></button>
+                                <button onclick="suscribed()"><img src="../socialicons/linkedin.png" alt="linkedin logo"></button>
+                                <button onclick="suscribed()"><img src="../socialicons/youtube.png" alt="youtube logo"></button>
+                                <button onclick="suscribed()"><img src="../socialicons/twitter.png" alt="twitter logo"></button>
                             </div> 
                         </div>
                         
                         <div class="links">
-                            <a href="/webpages/aboutus.html">Learn more about us</a>
-                            <a href="/webpages/contactus.html">Contact us here</a>
-                            <a href="/webpages/product.html">See all our products</a>
+                            <a href="../webpages/aboutus.html">Learn more about us</a>
+                            <a href="../webpages/contactus.html">Contact us here</a>
+                            <a href="../webpages/product.html">See all our products</a>
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
 <script>
-    var images = ['/printerimages/printer2.jpeg', '/printerimages/printer3.jpeg', '/printerimages/printer4.jpeg', '/printerimages/printer1.jpeg'];
+var images = ["/printerimages/printer2.jpeg", "/printerimages/printer3.jpeg", "/printerimages/printer4.jpeg", "/printerimages/printer1.jpeg"];
 
 var x = 0;
-var imgs = document.getElementById('mainimgs');
-setInterval(slider, 3000);
+var imgs = document.querySelector('mainimgs');
+setInterval(slider, 4000);
 
 function slider() {
+
+    var mainImage = document.querySelector(".mainimage");
+    var IMG1 = document.querySelector(".image1");
+    var IMG2 = document.querySelector(".image2");
+    var IMG3 = document.querySelector(".image3");
+    var IMG4 = document.querySelector(".image4");
+
+    IMG1.addEventListener("click",function(){
+        mainImage.src = images[3];
+    })
+    IMG2.addEventListener("click",function(){
+        mainImage.src = images[0];
+    })
+    IMG3.addEventListener("click",function(){
+        mainImage.src = images[1];
+    })
+    IMG4.addEventListener("click",function(){
+        mainImage.src = images[2];
+    })
 
     if (x < images.length) 
     {
@@ -288,9 +339,48 @@ function slider() {
     x = 1;
     }
 
-
-    imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+    mainImage.src = images[x - 1];
 }
+
+const seemorebtn = document.querySelector(".seemore");
+const seemorecontent = document.querySelector(".smore");
+
+seemorebtn.addEventListener("click",function(){
+    if(seemorecontent.style.display == "none"){
+        seemorebtn.innerHTML="SEE LESS";
+        seemorecontent.style.display="block";
+    }
+    else{
+        seemorecontent.style.display="none";
+        seemorebtn.innerHTML="SEE MORE";
+    }
+
+})
+
+const pop = document.querySelector(".popup");
+const BUY = document.querySelector(".buy");
+const okaybtn = document.querySelector(".ok");
+const mainee = document.querySelector("main");
+const foot = document.querySelector(".footercontent");
+
+
+BUY.addEventListener("click",function(){
+    pop.style.visibility = "visible";
+    pop.style.opacity = 1;
+    mainee.style.filter = "blur(10px)";
+    foot.style.filter = "blur(10px)";
+
+});
+
+okaybtn.addEventListener("click",function(){
+    pop.style.visibility = "hidden";
+    pop.style.opacity = 0;
+    mainee.style.filter = "blur(0px)";
+    foot.style.filter = "blur(0px)";
+
+})
+
+
 </script>
     </body>
 </html>
