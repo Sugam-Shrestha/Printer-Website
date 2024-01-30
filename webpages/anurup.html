@@ -11,26 +11,6 @@
     </head>
     <style>
 
-        .person{
-            display:flex;
-            flex-direction: column;
-            align-items:center;
-            justify-content: space-around;
-            width:250px;
-            height:400px;
-            background-color: var(--primary);
-            border-radius:20px;
-        }
-        .person p{
-            font-size:14px;
-        }
-        img.personimg{
-            width:150px;
-            height:150px;
-        }
-        .content h1{
-            color:var(--primary);
-        }
     </style>
     <body>
         <header>
@@ -116,14 +96,20 @@
             </div>
         </header>
         <main style="margin-top:150px;">
-            <div class="aboutcontent">
-                <div class="aboutcon">
-                    <div class="image">
-                        <img src="../images/user.png" alt="">
-                    </div>
-                    <div class="content">
-                        <h1>Anurup Kharel</h1>
-                    </div>
+            <div class="aboutcontent" style="display:flex; width:100%; justify-content:space-evenly;" >
+                <div class="image" style="display:flex; flex-direction: column; justify-content: center; align-items: center; width:320px; height:320px; ">
+                    <img style="width:200px; height:200px; padding:10px; border:3px solid var(--primary); border-radius:50%;" src="../images/user.png">
+                    <h1 style="color:var(--light);">Anurup Kharel</h1>
+                </div>
+                <div class="content" style="color:var(--light); width:60%; margin:70px;">
+                    <h1>ABOUT ME</h1>
+                    <p style="font-size:18px;">My name is Anurup Kharel.</p>
+                    <p style="font-size:18px;">I live in Faika,Kapan,Nepal.</p>
+                    <p style="font-size:18px;">My name is Anurup Kharel.</p>
+                    <br>
+                    <h1>EDUCATION HISTORY</h1>
+                    <p style="font-size:18px;">My name is Anurup Kharel.</p>
+                    <h1>CONTACT ME</h1>
                 </div>
             </div>
         </main>
@@ -139,17 +125,17 @@
                         <div class="socialiconsf">
                             <h3>FOLLOW US ON FOR MORE ON</h3>
                             <div class="icons">
-                                <button onclick="suscribed()"><img src="/socialicons/facebook.png" alt="facebook logo"></button>
-                                <button onclick="suscribed()"><img src="/socialicons/instagram.png" alt="instagram logo"></button>
-                                <button onclick="suscribed()"><img src="/socialicons/linkedin.png" alt="linkedin logo"></button>
-                                <button onclick="suscribed()"><img src="/socialicons/youtube.png" alt="youtube logo"></button>
-                                <button onclick="suscribed()"><img src="/socialicons/twitter.png" alt="twitter logo"></button>
+                                <button onclick="suscribed()"><img src="../socialicons/facebook.png" alt="facebook logo"></button>
+                                <button onclick="suscribed()"><img src="../socialicons/instagram.png" alt="instagram logo"></button>
+                                <button onclick="suscribed()"><img src="../socialicons/linkedin.png" alt="linkedin logo"></button>
+                                <button onclick="suscribed()"><img src="../socialicons/youtube.png" alt="youtube logo"></button>
+                                <button onclick="suscribed()"><img src="../socialicons/twitter.png" alt="twitter logo"></button>
                             </div> 
                         </div>
                         <div class="links">
-                            <a href="/webpages/aboutus.html">Learn more about us</a>
-                            <a href="/webpages/contactus.html">Contact us here</a>
-                            <a href="/webpages/product.html">See all our products</a>
+                            <a href="../webpages/aboutus.html">Learn more about us</a>
+                            <a href="../webpages/contactus.html">Contact us here</a>
+                            <a href="../webpages/product.html">See all our products</a>
                         </div>
                     </div>
                 </div>
