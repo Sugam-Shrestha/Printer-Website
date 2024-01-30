@@ -59,6 +59,41 @@
                 text-align:center;
                 font-size:23px;
             }
+            .person{
+                display:flex;
+                align-items: center;
+            }
+            .person img{
+                width:40px;
+                height:40px;
+                margin:10px;
+            }
+            .person h1{
+                padding:0px 10px;
+                border-top:2px solid var(--primary);
+                border-right:2px solid var(--primary);
+                border-radius: 5px;
+                color:var(--primary);
+            }
+            .person h1:hover{
+                color:var(--light);
+            }
+            .person h2{
+                padding:0px 10px;
+                color:var(--secondary);
+                border-left:2px solid var(--secondary);
+                border-bottom:2px solid var(--secondary);
+                border-radius: 5px;
+            }
+            .user{
+                border:2px solid var(--secondary);
+                border-radius:50%;
+                background-color: var(--primary);
+                margin:10px;
+            }
+            .udetail a{
+                text-decoration:none;
+            }
 
         </style>
     </head>
@@ -163,10 +198,11 @@
                 <div class="banner" style="width:90%; margin:auto; border-radius:0px;">
                     <img style="width:100%; height:45vh; border-radius:20px;" src="./printerimages/Printerbanner1.jpg" alt="printer banner">
                 </div>
-                <div class="allcontent" style="display:flex; width:100%; margin:auto;">
+                <div class="allcontent" style="display:flex; flex-direction:column; width:100%; margin:auto;">
                     <div class="blog">
+
                     </div>
-                    <div class="product" style="width:100%; padding:10px; margin:20px;border-radius:30px;">
+                    <div class="product" style="width:90%; margin:auto; padding:10px; margin:20px auto;border-radius:30px;">
                         <div class="featured">
                             <figure class="feature" style="width:25px;">
                                 <img src="./images/feature.png" alt="featured image" style="width:100%;">
@@ -196,7 +232,7 @@
                                 <div class="more">
                                     <a href="./webpages/product-details.html">
                                         <div>
-                                            <p>SEE MORE</p>
+                                            <p>SEE MORE ABOUT THE PRODUCT</p>
                                         </div>
                                     </a>
                                 </div>
@@ -223,7 +259,7 @@
                                 <div class="more">
                                     <a href="./webpages/product-details.html">
                                         <div>
-                                            <p>SEE MORE</p>
+                                            <p>SEE MORE ABOUT THE PRODUCT</p>
                                         </div>
                                     </a>
                                 </div>
@@ -250,7 +286,7 @@
                                 <div class="more">
                                     <a href="./webpages/product-details.html">
                                         <div>
-                                            <p>SEE MORE</p>
+                                            <p>SEE MORE ABOUT THE PRODUCT</p>
                                         </div>
                                     </a>
                                 </div>
@@ -277,7 +313,7 @@
                                 <div class="more">
                                     <a href="./webpages/product-details.html">
                                         <div>
-                                            <p>SEE MORE</p>
+                                            <p>SEE MORE ABOUT THE PRODUCT</p>
                                         </div>
                                     </a>
                                 </div>
@@ -312,7 +348,7 @@
                                 <div class="more">
                                     <a href="./webpages/product-details.html">
                                         <div>
-                                            <p>SEE MORE</p>
+                                            <p>SEE MORE ABOUT THE PRODUCT</p>
                                         </div>
                                     </a>
                                 </div>
@@ -339,7 +375,7 @@
                                 <div class="more">
                                     <a href="./webpages/product-details.html">
                                         <div>
-                                            <p>SEE MORE</p>
+                                            <p>SEE MORE ABOUT THE PRODUCT</p>
                                         </div>
                                     </a>
                                 </div>
@@ -366,7 +402,7 @@
                                 <div class="more">
                                     <a href="./webpages/product-details.html">
                                         <div>
-                                            <p>SEE MORE</p>
+                                            <p>SEE MORE ABOUT THE PRODUCT</p>
                                         </div>
                                     </a>
                                 </div>
@@ -393,15 +429,53 @@
                                 <div class="more">
                                     <a href="./webpages/product-details.html">
                                         <div>
-                                            <p>SEE MORE</p>
+                                            <p>SEE MORE ABOUT THE PRODUCT</p>
                                         </div>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="research">
-            
+                    <div class="about" style="width:90%; margin:auto; padding:10px; margin:20px auto;border-radius:30px; border:2px solid var(--light); box-shadow: 0px 0px 10px var(--light);"> 
+                        <h1 align="center" style="color:var(--light); border-bottom:2px solid var(--light);border-radius:10px;">ABOUT OUR TEAM</h1>
+                        <div class="row" style="display:flex; padding:10px; width:80%; margin:auto; justify-content: space-between; color:var(--light);">
+                            <div class="person">
+                                <div class="user">
+                                    <img src="./images/user.png" alt="">
+                                </div>
+                                <div class="udetail">
+                                    <a href="./webpages/anurup.html"><h1>Anurup Kharel</h1></a>
+                                    <h2>Team Leader</h2>
+                                </div>
+                            </div>
+                            <div class="person">
+                                <div class="user">
+                                    <img src="./images/user.png" alt="">
+                                </div>
+                                <div class="udetail">
+                                    <a href="./webpages/sugam.html"><h1>Sugam Shrestha</h1></a>
+                                    <h2>Team member</h2>
+                                </div>
+                            </div>
+                            <div class="person">
+                                <div class="user">
+                                    <img src="./images/user.png" alt="">
+                                </div>
+                                <div class="udetail">
+                                    <a href="./webpages/prajol.html"><h1>Prajol Bimali</h1></a>
+                                    <h2>Team member</h2>
+                                </div>
+                            </div>
+                            <div class="person">
+                                <div class="user">
+                                    <img src="./images/user.png" alt="">
+                                </div>
+                                <div class="udetail">
+                                    <a href="./webpages/priyanshu.html"><h1>Priyanshu Biswokarma</h1></a>
+                                    <h2>Team member</h2>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -435,37 +509,5 @@
                 </div>
             </div>
         </footer>
-    <script>
-        const seemorebtn = document.querySelector(".seemore");
-        const seemorecontent = document.querySelector(".smore");
-
-        seemorebtn.addEventListener("click",function(){
-            if(seemorecontent.style.display == "none"){
-                seemorebtn.innerHTML="SEE LESS";
-                seemorecontent.style.display="block";
-            }
-            else{
-                seemorecontent.style.display="none";
-                seemorebtn.innerHTML="SEE MORE";
-            }
-
-        })
-
-        const pop = document.querySelector(".popup");
-        const BUY = document.querySelector(".buy");
-        const okaybtn = document.querySelector(".ok");
-        const mainee = document.querySelector("main");
-
-        BUY.addEventListener("click",function(){
-            pop.style.visibility = "visible";
-            pop.style.opacity = 1;
-            mainee.style.filter = "blur(10px)";
-        })
-        okaybtn.addEventListener("click",function(){
-            pop.style.visibility = "hidden";
-            pop.style.opacity = 0;
-            mainee.style.filter = "blur(0px)";
-})
-    </script>
     </body>
 </html>
