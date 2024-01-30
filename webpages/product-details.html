@@ -1,13 +1,18 @@
 <!DOCTYPE html>
+<!-- this is a product description page. It comprises of the overall description of the page.-->
 <html lang="en">
     <head>
         <meta name="author" content="Sugam Shrestha">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale="1.0">
+        <!-- tile of the page. -->
         <title>PRODUCT DETAILS</title>
+        <!-- linking css to the webpage. -->
         <link rel="stylesheet" href="../css/style.css">
         <link rel="shortcut icon" href="../images/product.png">
+        <!-- linking javascript to the webpage. -->
         <script src="../javascript/index.js"></script>
+        <!-- internal css starts for the webpage. -->
         <style>
             #leftimgs{
                 width:100px;
@@ -77,8 +82,10 @@
                 cursor: pointer;
             }
         </style>
+        <!-- internal css end for the page. -->
     </head>
     <body>
+        <!-- header with navbar starts -->
         <header>
             <div class="navbar">
                 <div class="logo">
@@ -161,6 +168,7 @@
                 </nav>
             </div>
         </header>
+        <!-- the navbar end here. -->
         <main style="margin-top:130px; position:relative">
             <div class="proddetail" style="display:flex; flex-direction:column; width:90%; margin:auto; gap:50px;">
                 <div class="proddet" style="display:flex; width:90%; margin:auto; justify-content: space-around; gap:40px;">
@@ -307,7 +315,7 @@
                 </div>
             </div>
         </main>
-        <div class="popup" style="visibility:hidden; opacity:0; padding:50px 60px; background-color:var(--primary); border-radius:10px; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); ">
+        <div class="popup" style="visibility:hidden; opacity:0; padding:50px 60px; background-color:var(--primary); border-radius:10px; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); ">
             <h1>THANKYOU FOR CONFIRMING YOUR ORDER.</h1>
             <div class="ok" style="display: flex; justify-content: center; align-items: center;">
                 <a class="okay">OK</a>
@@ -332,7 +340,12 @@
                                 <button onclick="suscribed()"><img src="../socialicons/twitter.png" alt="twitter logo"></button>
                             </div> 
                         </div>
-                        
+                        <div class="links">
+                            <h2 class="footter"> &copy; PRINTER HUB, Terms and conditions</h2>. 
+                            <a href="../webpages/login.html">Login to our page</a>
+                            <a href="../webpages/signup.html">Create an account</a>
+                            <a href="../webpages/aboutus.html">Learn About us</a>
+                        </div>
                         <div class="links">
                             <a href="../webpages/aboutus.html">Learn more about us</a>
                             <a href="../webpages/contactus.html">Contact us here</a>
